@@ -9,14 +9,14 @@ import { BlogListJsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "All Articles",
   description:
-    "Browse all articles on Inkwell — technology, design, culture, science, finance, health, travel, and life.",
+    "Browse all articles on Quillora — technology, design, culture, science, finance, health, travel, and life.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     type: "website",
     url: `${siteConfig.url}/blog`,
     title: `All Articles | ${siteConfig.name}`,
     description:
-      "Browse all articles on Inkwell — technology, design, culture, science, finance, health, travel, and life.",
+      "Browse all articles on Quillora — technology, design, culture, science, finance, health, travel, and life.",
   },
 };
 

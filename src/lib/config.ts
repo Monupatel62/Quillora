@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   tagline: "Ideas worth reading.",
   description:
     "Thoughtful articles on technology, design, culture, science, and the world around us. No noise — just ideas.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://quillora.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://quillora-io.vercel.app",
   twitterHandle: "@quillorablog",
   locale: "en_US",
   defaultOgImage: "/og-default.png",

@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 /* ============================================================
-   INKWELL — Global Styles
+   QUILLORA — Global Styles
    ============================================================ */
 
 @layer base {
@@ -73,7 +73,7 @@
 
 /* ---- Prose overrides for blog content ---- */
 @layer components {
-  .prose-inkwell {
+  .prose-quillora {
     --tw-prose-body:        var(--text2);
     --tw-prose-headings:    var(--text);
     --tw-prose-links:       var(--accent2);
@@ -92,7 +92,7 @@
   }
 
   /* Lead paragraph */
-  .prose-inkwell p.lead {
+  .prose-quillora p.lead {
     font-size: 1.15rem;
     color: var(--text);
     font-weight: 400;

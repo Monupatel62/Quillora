@@ -199,7 +199,7 @@ export default async function BlogPostPage({
         <article
           className="
             max-w-3xl mx-auto px-5 mb-16
-            prose prose-lg prose-inkwell
+            prose prose-lg prose-quillora
             dark:prose-invert
             prose-headings:font-serif prose-headings:font-bold
             prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4

@@ -1,5 +1,5 @@
 // ============================================================
-//  INKWELL — Core TypeScript Types
+//  QUILLORA — Core TypeScript Types
 // ============================================================
 
 export type Category =

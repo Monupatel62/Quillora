@@ -54,7 +54,7 @@ export default function HomePage() {
           {/* Left — copy */}
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs font-semibold text-[var(--accent2)] mb-7 animate-fade-up">
-              ✦ Welcome to Inkwell
+              ✦ Welcome to Quillora
             </div>
 
             <h1
