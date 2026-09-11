@@ -1,0 +1,338 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import {
+  getAllSlugs,
+  getPostBySlug,
+  getRelatedPosts,
+  formatDate,
+  postUrl,
+} from "@/lib/posts";
+import { getCategoryByName } from "@/lib/categories";
+import { siteConfig } from "@/lib/config";
+import { ArticleJsonLd } from "@/components/seo/JsonLd";
+import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { Newsletter } from "@/components/ui/Newsletter";
+
+/* ── Static params (SSG all posts at build time) ─────────── */
+export async function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
+
+/* ── Per-post Metadata ────────────────────────────────────── */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  if (!post) return { title: "Post Not Found" };
+
+  const url = postUrl(slug);
+  const ogTitle = `${post.title} | ${siteConfig.name}`;
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    keywords: post.tags,
+
+    authors: [{ name: post.author.name }],
+
+    alternates: { canonical: url },
+
+    openGraph: {
+      type: "article",
+      url,
+      title: ogTitle,
+      description: post.excerpt,
+      siteName: siteConfig.name,
+      locale: siteConfig.locale,
+      publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt ?? post.publishedAt,
+      authors: [post.author.name],
+      section: post.category,
+      tags: post.tags,
+      images: [
+        {
+          url: siteConfig.defaultOgImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description: post.excerpt,
+      images: [siteConfig.defaultOgImage],
+    },
+  };
+}
+
+/* ── Blog Post Page ───────────────────────────────────────── */
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  if (!post) notFound();
+
+  const cat = getCategoryByName(post.category);
+  const related = getRelatedPosts(slug, 3);
+  const url = postUrl(slug);
+
+  return (
+    <>
+      {/* JSON-LD Article schema */}
+      <ArticleJsonLd post={post} />
+
+      {/* Reading progress bar */}
+      <ReadingProgress />
+
+      <div className="pt-20">
+        {/* ── Post Hero ──────────────────────────────────── */}
+        <header className="max-w-3xl mx-auto px-5 py-12 text-center">
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center justify-center gap-1.5 text-xs text-[var(--text3)] flex-wrap">
+              <li>
+                <Link href="/" className="hover:text-[var(--accent2)] transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li>
+                <Link href="/blog" className="hover:text-[var(--accent2)] transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li>
+                <Link
+                  href={`/blog/category/${post.category.toLowerCase()}`}
+                  className="hover:text-[var(--accent2)] transition-colors"
+                >
+                  {post.category}
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="text-[var(--text2)] line-clamp-1 max-w-[160px]" aria-current="page">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
+
+          {/* Category + date */}
+          <div className="flex items-center justify-center gap-2 mb-6 flex-wrap">
+            <Link
+              href={`/blog/category/${post.category.toLowerCase()}`}
+              className="text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full bg-[var(--accent)]/10 text-[var(--accent2)] hover:bg-[var(--accent)]/20 transition-colors"
+            >
+              {cat?.icon} {post.category}
+            </Link>
+            <time dateTime={post.publishedAt} className="text-xs text-[var(--text3)]">
+              {formatDate(post.publishedAt)}
+            </time>
+            {post.updatedAt && post.updatedAt !== post.publishedAt && (
+              <span className="text-xs text-[var(--text3)]">
+                · Updated {formatDate(post.updatedAt)}
+              </span>
+            )}
+            <span className="text-xs text-[var(--text3)]">· {post.readingTime} min read</span>
+          </div>
+
+          {/* Title */}
+          <h1 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl leading-tight text-[var(--text)] mb-6">
+            {post.title}
+          </h1>
+
+          {/* Excerpt */}
+          <p className="text-lg text-[var(--text2)] leading-relaxed mb-8">
+            {post.excerpt}
+          </p>
+
+          {/* Author */}
+          <div className="flex items-center justify-center gap-3 py-6 border-y border-[var(--border)]">
+            <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[var(--accent)] to-[var(--accent2)] text-white font-bold text-sm shrink-0">
+              {post.author.avatar}
+            </div>
+            <div className="text-left">
+              <p className="font-semibold text-[var(--text)]">{post.author.name}</p>
+              <p className="text-sm text-[var(--text3)]">
+                {post.author.role}
+                {post.author.twitter && (
+                  <>
+                    {" · "}
+                    <a
+                      href={`https://twitter.com/${post.author.twitter.replace("@", "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[var(--accent2)] transition-colors"
+                    >
+                      {post.author.twitter}
+                    </a>
+                  </>
+                )}
+              </p>
+            </div>
+          </div>
+        </header>
+
+        {/* ── Cover Image ────────────────────────────────── */}
+        <div className="max-w-4xl mx-auto px-5 mb-12">
+          <div
+            className={`h-72 md:h-96 rounded-3xl flex items-center justify-center text-8xl bg-gradient-to-br ${post.coverGradient}`}
+            role="img"
+            aria-label={`Cover image for ${post.title}`}
+          >
+            {post.coverEmoji}
+          </div>
+        </div>
+
+        {/* ── Post Content ───────────────────────────────── */}
+        <article
+          className="
+            max-w-3xl mx-auto px-5 mb-16
+            prose prose-lg prose-inkwell
+            dark:prose-invert
+            prose-headings:font-serif prose-headings:font-bold
+            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
+            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+            prose-p:text-[var(--text2)] prose-p:leading-relaxed
+            prose-blockquote:border-l-[var(--accent)] prose-blockquote:bg-[var(--surface)] prose-blockquote:rounded-r-xl prose-blockquote:py-1
+            prose-strong:text-[var(--text)]
+            prose-a:text-[var(--accent2)] prose-a:no-underline hover:prose-a:underline
+            prose-code:text-[var(--accent2)] prose-code:bg-[var(--surface2)] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+            prose-pre:bg-[var(--surface)] prose-pre:border prose-pre:border-[var(--border)] prose-pre:rounded-2xl
+            max-w-none
+          "
+          itemScope
+          itemType="https://schema.org/Article"
+          aria-label={post.title}
+        >
+          {/* Hidden microdata */}
+          <meta itemProp="headline" content={post.title} />
+          <meta itemProp="datePublished" content={post.publishedAt} />
+          <meta itemProp="author" content={post.author.name} />
+          <meta itemProp="description" content={post.excerpt} />
+
+          {/* Render HTML content safely — in production use a sanitizer */}
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        </article>
+
+        {/* ── Tags + Share ───────────────────────────────── */}
+        <div className="max-w-3xl mx-auto px-5 mb-16">
+          {/* Tags */}
+          <div className="flex items-center gap-2 flex-wrap mb-8">
+            <span className="text-xs font-semibold text-[var(--text3)] uppercase tracking-wider mr-1">
+              Tags:
+            </span>
+            {post.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)]"
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Share */}
+          <ShareButtons url={url} title={post.title} />
+        </div>
+
+        {/* ── Related Posts ──────────────────────────────── */}
+        {related.length > 0 && (
+          <section
+            className="max-w-6xl mx-auto px-5 py-12 border-t border-[var(--border)]"
+            aria-labelledby="related-heading"
+          >
+            <div className="mb-8">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--accent2)] mb-2">
+                ✦ Continue Reading
+              </p>
+              <h2
+                id="related-heading"
+                className="font-serif font-bold text-2xl text-[var(--text)]"
+              >
+                Related Posts
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {related.map((p, i) => (
+                <BlogCard key={p.slug} post={p} index={i} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── Newsletter ─────────────────────────────────── */}
+        <div className="max-w-6xl mx-auto px-5 py-12 pb-20">
+          <Newsletter />
+        </div>
+      </div>
+    </>
+  );
+}
+
+/* ── Share Buttons (client island) ───────────────────────── */
+function ShareButtons({ url, title }: { url: string; title: string }) {
+  const encoded = encodeURIComponent(url);
+  const encodedTitle = encodeURIComponent(title);
+
+  return (
+    <div className="flex items-center gap-3 flex-wrap">
+      <span className="text-xs font-semibold text-[var(--text3)] uppercase tracking-wider">
+        Share:
+      </span>
+      <a
+        href={`https://twitter.com/intent/tweet?url=${encoded}&text=${encodedTitle}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Twitter"
+        className="
+          w-9 h-9 rounded-full flex items-center justify-center text-sm
+          bg-[var(--surface)] border border-[var(--border)]
+          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
+          transition-all duration-200 hover:-translate-y-0.5
+        "
+      >
+        𝕏
+      </a>
+      <a
+        href={`https://wa.me/?text=${encodedTitle}%20${encoded}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on WhatsApp"
+        className="
+          w-9 h-9 rounded-full flex items-center justify-center text-sm
+          bg-[var(--surface)] border border-[var(--border)]
+          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
+          transition-all duration-200 hover:-translate-y-0.5
+        "
+      >
+        💬
+      </a>
+      <a
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encoded}&title=${encodedTitle}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on LinkedIn"
+        className="
+          w-9 h-9 rounded-full flex items-center justify-center text-sm
+          bg-[var(--surface)] border border-[var(--border)]
+          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
+          transition-all duration-200 hover:-translate-y-0.5
+        "
+      >
+        in
+      </a>
+    </div>
+  );
+}

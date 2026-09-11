@@ -1,0 +1,63 @@
+import type { Author } from "@/types/blog";
+
+export const AUTHORS: Record<string, Author> = {
+  arjun: {
+    name: "Arjun Mehta",
+    slug: "arjun-mehta",
+    bio: "Tech writer covering AI, software engineering, and the future of work.",
+    avatar: "AM",
+    role: "Tech Writer",
+    twitter: "@arjunwrites",
+  },
+  priya: {
+    name: "Priya Nair",
+    slug: "priya-nair",
+    bio: "UX designer and writer exploring the intersection of aesthetics and usability.",
+    avatar: "PN",
+    role: "UX Designer & Writer",
+    twitter: "@priyanair_ux",
+  },
+  sana: {
+    name: "Sana Qureshi",
+    slug: "sana-qureshi",
+    bio: "Culture journalist interested in how media, technology, and society shape each other.",
+    avatar: "SQ",
+    role: "Culture Writer",
+  },
+  rahul: {
+    name: "Dr. Rahul Gupta",
+    slug: "dr-rahul-gupta",
+    bio: "Neuroscientist turned writer. Bridging the gap between research labs and curious minds.",
+    avatar: "RG",
+    role: "Science Writer",
+    twitter: "@drrahulwrites",
+  },
+  vikram: {
+    name: "Vikram Shah",
+    slug: "vikram-shah",
+    bio: "Personal finance practitioner and educator. Believer in simple, boring, effective investing.",
+    avatar: "VS",
+    role: "Finance Writer",
+  },
+  ananya: {
+    name: "Dr. Ananya Roy",
+    slug: "dr-ananya-roy",
+    bio: "Sports medicine physician writing about performance, recovery, and the science of the body.",
+    avatar: "AR",
+    role: "Sports Medicine Writer",
+  },
+  meera: {
+    name: "Meera Pillai",
+    slug: "meera-pillai",
+    bio: "Slow traveler, fast writer. Based everywhere and nowhere in particular.",
+    avatar: "MP",
+    role: "Travel Writer",
+  },
+  kabir: {
+    name: "Kabir Das",
+    slug: "kabir-das",
+    bio: "Philosophy graduate who found writing more useful than academia.",
+    avatar: "KD",
+    role: "Philosophy & Culture Writer",
+  },
+};
