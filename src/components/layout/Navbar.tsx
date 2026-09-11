@@ -46,10 +46,10 @@ export function Navbar() {
         <Link
           href="/"
           className="flex items-center gap-2 font-bold text-lg shrink-0"
-          aria-label="Inkwell — home"
+          aria-label="Quillora — home"
         >
           <span className="text-[var(--accent2)] text-sm">✦</span>
-          <span className="gradient-text font-serif">Inkwell</span>
+          <span className="gradient-text font-serif">Quillora</span>
         </Link>
 
         {/* Desktop nav */}

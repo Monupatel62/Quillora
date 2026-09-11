@@ -20,7 +20,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
               <span className="text-[var(--accent2)] text-sm">✦</span>
-              <span className="gradient-text font-serif font-bold text-xl">Inkwell</span>
+              <span className="gradient-text font-serif font-bold text-xl">Quillora</span>
             </Link>
             <p className="text-sm text-[var(--text2)] leading-relaxed max-w-xs">
               {siteConfig.description}
@@ -30,7 +30,7 @@ export function Footer() {
                 href={`https://twitter.com/${siteConfig.twitterHandle.replace("@", "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow Inkwell on Twitter"
+                aria-label="Follow Quillora on Twitter"
                 className="
                   w-9 h-9 rounded-full flex items-center justify-center text-sm
                   bg-[var(--surface)] border border-[var(--border)]
