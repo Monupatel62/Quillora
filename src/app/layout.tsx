@@ -141,10 +141,33 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable}`}
     >
       <head>
-        {/* Preconnect to Google Fonts CDN (fonts are loaded via next/font but this helps sub-resources) */}
+        {/* Preconnect to Google Fonts CDN */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* DNS prefetch for analytics if added later */}
+        {/* DNS prefetch for analytics */}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+        {/* ── Multitag Ad Script (direct in head) ── */}
+        <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="278856"
+          async
+          data-cfasync="false"
+        />
+
+        {/* ── Service Worker Registration for Push Ads ── */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js', { scope: '/' })
+                    .then(function(reg) { console.log('SW registered'); })
+                    .catch(function(err) { console.log('SW error:', err); });
+                });
+              }
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         {/* ── Google Tag Manager (noscript fallback) ── */}
