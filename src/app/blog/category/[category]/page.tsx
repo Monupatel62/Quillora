@@ -2,17 +2,27 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getPostsByCategory } from "@/lib/posts";
-import { CATEGORIES, getCategoryBySlug, slugToCategory } from "@/lib/categories";
+import {
+  CATEGORIES,
+  getCategoryBySlug,
+  getCategoryKeywords,
+  slugToCategory,
+} from "@/lib/categories";
 import { siteConfig } from "@/lib/config";
 import { CategoryJsonLd } from "@/components/seo/JsonLd";
 import { BlogGrid } from "@/components/blog/BlogGrid";
 
-/* ── Static params ────────────────────────────────────────── */
 export async function generateStaticParams() {
   return CATEGORIES.map((cat) => ({ category: cat.slug }));
 }
 
-/* ── Category Metadata ────────────────────────────────────── */
+/* ── Category Metadata ────────────────────────────────────────
+   Strategy:
+   - Title: "[Category] Articles — [Brand]" pattern
+   - Description: category-specific, 150-155 chars
+   - Keywords: 8 targeted per-category keywords
+   - OG: category-specific title + description
+   ──────────────────────────────────────────────────────────── */
 export async function generateMetadata({
   params,
 }: {
@@ -22,29 +32,48 @@ export async function generateMetadata({
   const cat = getCategoryBySlug(category);
   if (!cat) return { title: "Category Not Found" };
 
-  const title = `${cat.name} Articles`;
-  const description = `${cat.description} — Browse all ${cat.name} articles on ${siteConfig.name}.`;
   const url = `${siteConfig.url}/blog/category/${cat.slug}`;
 
+  /* Power title — category keyword first */
+  const metaTitle = `${cat.name} Articles — ${siteConfig.name}`;
+
+  /* Full description — 150-155 chars using category description */
+  const metaDesc = `${cat.description} Read the latest ${cat.name.toLowerCase()} articles on ${siteConfig.name}.`;
+
+  const keywords = getCategoryKeywords(category);
+
   return {
-    title,
-    description,
-    alternates: { canonical: url },
+    title: metaTitle,
+    description: metaDesc,
+    keywords,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       type: "website",
       url,
-      title: `${title} | ${siteConfig.name}`,
-      description,
+      siteName: siteConfig.name,
+      title: metaTitle,
+      description: metaDesc,
+      images: [
+        {
+          url: `${siteConfig.url}/og-default.png`,
+          width: 1200,
+          height: 630,
+          alt: `${cat.name} Articles — ${siteConfig.name}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | ${siteConfig.name}`,
-      description,
+      site: siteConfig.twitterHandle,
+      title: metaTitle,
+      description: metaDesc,
+      images: [`${siteConfig.url}/og-default.png`],
     },
   };
 }
 
-/* ── Category Page ────────────────────────────────────────── */
 export default async function CategoryPage({
   params,
 }: {
@@ -68,7 +97,8 @@ export default async function CategoryPage({
       />
 
       <div className="max-w-6xl mx-auto px-5 pt-28 pb-20">
-        {/* Breadcrumb */}
+
+        {/* Breadcrumb — SEO hierarchy signal */}
         <nav aria-label="Breadcrumb" className="mb-8">
           <ol className="flex items-center gap-1.5 text-xs text-[var(--text3)]">
             <li>
@@ -89,25 +119,23 @@ export default async function CategoryPage({
           </ol>
         </nav>
 
-        {/* Category hero */}
+        {/* Category hero — H1 contains primary keyword */}
         <header className="mb-14">
           <div className="flex items-center gap-4 mb-4">
-            <span
-              className="text-5xl"
-              role="img"
-              aria-label={cat.name}
-            >
+            <span className="text-5xl" role="img" aria-label={cat.name}>
               {cat.icon}
             </span>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-[var(--accent2)] mb-1">
                 ✦ Topic
               </p>
+              {/* H1 — category name = primary keyword */}
               <h1 className="font-serif font-bold text-4xl text-[var(--text)]">
-                {cat.name}
+                {cat.name} Articles
               </h1>
             </div>
           </div>
+          {/* Description — matches meta description for consistency */}
           <p className="text-[var(--text2)] text-lg max-w-2xl leading-relaxed">
             {cat.description}
           </p>
@@ -116,7 +144,7 @@ export default async function CategoryPage({
           </p>
         </header>
 
-        {/* All categories quick nav */}
+        {/* Topic navigation — internal linking */}
         <nav
           aria-label="All topics"
           className="flex flex-wrap gap-2 mb-12 pb-10 border-b border-[var(--border)]"
@@ -139,7 +167,7 @@ export default async function CategoryPage({
           ))}
         </nav>
 
-        {/* Posts grid — with search only (category already filtered) */}
+        {/* Posts grid */}
         {posts.length === 0 ? (
           <div className="py-20 text-center">
             <p className="text-4xl mb-4">✍️</p>
@@ -148,16 +176,11 @@ export default async function CategoryPage({
               href="/blog"
               className="inline-block mt-6 text-sm font-semibold text-[var(--accent2)] hover:underline"
             >
-              ← Back to all posts
+              ← Browse all articles
             </Link>
           </div>
         ) : (
-          <BlogGrid
-            posts={posts}
-            showFilter={false}
-            showSearch
-            initialCount={9}
-          />
+          <BlogGrid posts={posts} showFilter={false} showSearch initialCount={9} />
         )}
       </div>
     </>

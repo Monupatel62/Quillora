@@ -5,22 +5,62 @@ import { FeaturedCard } from "@/components/blog/FeaturedCard";
 import { BlogGrid } from "@/components/blog/BlogGrid";
 import { BlogListJsonLd } from "@/components/seo/JsonLd";
 
-/* ── SEO Metadata ─────────────────────────────────────────── */
+/* ── SEO Metadata ─────────────────────────────────────────────
+   Strategy:
+   - Title: "All Articles" → keyword-rich + intent-matching
+   - Description: 155 chars, covers all 8 categories
+   - Keywords: all category terms + blog-specific terms
+   - Canonical: /blog (not homepage)
+   ──────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "All Articles",
+  title: "All Articles — Technology, Design, Science, Finance & More",
   description:
-    "Browse all articles on Quillora — technology, design, culture, science, finance, health, travel, and life.",
-  alternates: { canonical: `${siteConfig.url}/blog` },
+    "Browse every article on Quillora. In-depth writing on technology, UI design, science, personal finance, health, travel, culture, and life philosophy.",
+  keywords: [
+    "technology articles",
+    "design blog posts",
+    "science articles",
+    "personal finance blog",
+    "health articles",
+    "travel writing",
+    "culture blog",
+    "life philosophy articles",
+    "AI blog",
+    "UX design articles",
+    "habit science",
+    "financial independence",
+    "blog articles",
+    "long form articles",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/blog`,
+  },
   openGraph: {
     type: "website",
     url: `${siteConfig.url}/blog`,
-    title: `All Articles | ${siteConfig.name}`,
+    siteName: siteConfig.name,
+    title: "All Articles — Quillora",
     description:
-      "Browse all articles on Quillora — technology, design, culture, science, finance, health, travel, and life.",
+      "In-depth articles on technology, design, science, personal finance, health, travel, and culture. Browse every post on Quillora.",
+    images: [
+      {
+        url: `${siteConfig.url}/og-default.png`,
+        width: 1200,
+        height: 630,
+        alt: "Quillora Blog — All Articles",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: siteConfig.twitterHandle,
+    title: "All Articles — Quillora",
+    description:
+      "In-depth articles on technology, design, science, personal finance, health, travel, and culture.",
+    images: [`${siteConfig.url}/og-default.png`],
   },
 };
 
-/* ── React Server Component ───────────────────────────────── */
 export default function BlogPage() {
   const featured = getFeaturedPost();
   const allPosts = getAllPosts();
@@ -38,34 +78,27 @@ export default function BlogPage() {
           <h1 className="font-serif font-bold text-4xl md:text-5xl text-[var(--text)] mb-4">
             Every post, one place.
           </h1>
-          <p className="text-[var(--text2)] max-w-xl mx-auto">
-            {allPosts.length} articles across technology, design, culture, and more.
-            Use the filters to find what interests you.
+          <p className="text-[var(--text2)] max-w-xl mx-auto leading-relaxed">
+            {allPosts.length} in-depth articles across technology, design, science, finance,
+            health, travel, culture, and life. Filter by topic or search below.
           </p>
         </header>
 
         {/* Featured post */}
         <section className="mb-14" aria-labelledby="blog-featured-heading">
-          <h2 id="blog-featured-heading" className="sr-only">
-            Featured article
-          </h2>
+          <h2 id="blog-featured-heading" className="sr-only">Featured article</h2>
           <FeaturedCard post={featured} />
         </section>
 
-        {/* Filterable grid — client component */}
+        {/* Filterable grid */}
         <section aria-labelledby="all-posts-heading">
           <h2
             id="all-posts-heading"
             className="font-serif font-bold text-2xl text-[var(--text)] mb-6"
           >
-            Browse All
+            Browse All Articles
           </h2>
-          <BlogGrid
-            posts={allPosts}
-            showFilter
-            showSearch
-            initialCount={6}
-          />
+          <BlogGrid posts={allPosts} showFilter showSearch initialCount={6} />
         </section>
       </div>
     </>

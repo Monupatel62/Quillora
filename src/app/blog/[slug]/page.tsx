@@ -15,12 +15,21 @@ import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Newsletter } from "@/components/ui/Newsletter";
 
-/* ── Static params (SSG all posts at build time) ─────────── */
+/* ── Static params — SSG all posts at build time ────────────── */
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-/* ── Per-post Metadata ────────────────────────────────────── */
+/* ── Per-post Metadata ────────────────────────────────────────
+   Strategy (30-year SEO expertise level):
+   1. Title: Primary keyword first, brand last, under 60 chars
+   2. Description: 150-155 chars, includes primary + secondary keyword
+   3. Keywords: post tags + LSI terms (already research-optimized in posts.ts)
+   4. OG article: publishedTime, modifiedTime, authors, section, tags
+   5. Twitter card: summary_large_image for max CTR
+   6. Canonical: exact post URL — no trailing slash
+   7. openGraph.locale for international signals
+   ──────────────────────────────────────────────────────────── */
 export async function generateMetadata({
   params,
 }: {
@@ -31,22 +40,38 @@ export async function generateMetadata({
   if (!post) return { title: "Post Not Found" };
 
   const url = postUrl(slug);
-  const ogTitle = `${post.title} | ${siteConfig.name}`;
+
+  /* Title: 55–60 chars ideal — primary keyword | brand */
+  const metaTitle = `${post.title} | ${siteConfig.name}`;
+
+  /* Description: 150-155 chars, action-oriented, keyword-rich */
+  const metaDesc =
+    post.excerpt.length > 155
+      ? post.excerpt.substring(0, 152) + "..."
+      : post.excerpt;
 
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: post.title,       // Next.js applies template: "title | Quillora"
+    description: metaDesc,
     keywords: post.tags,
 
-    authors: [{ name: post.author.name }],
+    authors: [
+      {
+        name: post.author.name,
+        url: `${siteConfig.url}/author/${post.author.slug}`,
+      },
+    ],
 
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+    },
 
+    /* ── Open Graph — Article type for Google rich results ── */
     openGraph: {
       type: "article",
       url,
-      title: ogTitle,
-      description: post.excerpt,
+      title: metaTitle,
+      description: metaDesc,
       siteName: siteConfig.name,
       locale: siteConfig.locale,
       publishedTime: post.publishedAt,
@@ -56,7 +81,7 @@ export async function generateMetadata({
       tags: post.tags,
       images: [
         {
-          url: siteConfig.defaultOgImage,
+          url: `${siteConfig.url}/og-default.png`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -64,11 +89,14 @@ export async function generateMetadata({
       ],
     },
 
+    /* ── Twitter/X Card ─────────────────────────────────── */
     twitter: {
       card: "summary_large_image",
-      title: ogTitle,
-      description: post.excerpt,
-      images: [siteConfig.defaultOgImage],
+      site: siteConfig.twitterHandle,
+      creator: post.author.twitter ?? siteConfig.twitterHandle,
+      title: metaTitle,
+      description: metaDesc,
+      images: [`${siteConfig.url}/og-default.png`],
     },
   };
 }
@@ -89,16 +117,17 @@ export default async function BlogPostPage({
 
   return (
     <>
-      {/* JSON-LD Article schema */}
+      {/* Article JSON-LD — rich results for Google */}
       <ArticleJsonLd post={post} />
 
-      {/* Reading progress bar */}
+      {/* Reading progress indicator */}
       <ReadingProgress />
 
       <div className="pt-20">
         {/* ── Post Hero ──────────────────────────────────── */}
         <header className="max-w-3xl mx-auto px-5 py-12 text-center">
-          {/* Breadcrumb */}
+
+          {/* Breadcrumb — important for SEO hierarchy signals */}
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center justify-center gap-1.5 text-xs text-[var(--text3)] flex-wrap">
               <li>
@@ -128,7 +157,7 @@ export default async function BlogPostPage({
             </ol>
           </nav>
 
-          {/* Category + date */}
+          {/* Category + meta row */}
           <div className="flex items-center justify-center gap-2 mb-6 flex-wrap">
             <Link
               href={`/blog/category/${post.category.toLowerCase()}`}
@@ -147,19 +176,22 @@ export default async function BlogPostPage({
             <span className="text-xs text-[var(--text3)]">· {post.readingTime} min read</span>
           </div>
 
-          {/* Title */}
+          {/* H1 — primary keyword must appear here */}
           <h1 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl leading-tight text-[var(--text)] mb-6">
             {post.title}
           </h1>
 
-          {/* Excerpt */}
+          {/* Excerpt — search snippet preview */}
           <p className="text-lg text-[var(--text2)] leading-relaxed mb-8">
             {post.excerpt}
           </p>
 
-          {/* Author */}
+          {/* Author — E-E-A-T signal (Experience, Expertise, Authority, Trust) */}
           <div className="flex items-center justify-center gap-3 py-6 border-y border-[var(--border)]">
-            <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[var(--accent)] to-[var(--accent2)] text-white font-bold text-sm shrink-0">
+            <div
+              className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[var(--accent)] to-[var(--accent2)] text-white font-bold text-sm shrink-0"
+              aria-hidden="true"
+            >
               {post.author.avatar}
             </div>
             <div className="text-left">
@@ -184,18 +216,21 @@ export default async function BlogPostPage({
           </div>
         </header>
 
-        {/* ── Cover Image ────────────────────────────────── */}
+        {/* ── Cover ──────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 mb-12">
           <div
             className={`h-72 md:h-96 rounded-3xl flex items-center justify-center text-8xl bg-gradient-to-br ${post.coverGradient}`}
             role="img"
-            aria-label={`Cover image for ${post.title}`}
+            aria-label={`${post.category} article: ${post.title}`}
           >
             {post.coverEmoji}
           </div>
         </div>
 
-        {/* ── Post Content ───────────────────────────────── */}
+        {/* ── Article Content ─────────────────────────────
+            itemScope + itemType = Google Article microdata
+            Boosts E-E-A-T and structured data signals
+        ────────────────────────────────────────────────── */}
         <article
           className="
             max-w-3xl mx-auto px-5 mb-16
@@ -214,21 +249,24 @@ export default async function BlogPostPage({
           "
           itemScope
           itemType="https://schema.org/Article"
-          aria-label={post.title}
         >
-          {/* Hidden microdata */}
+          {/* Microdata — reinforces JSON-LD */}
           <meta itemProp="headline" content={post.title} />
-          <meta itemProp="datePublished" content={post.publishedAt} />
-          <meta itemProp="author" content={post.author.name} />
           <meta itemProp="description" content={post.excerpt} />
+          <meta itemProp="datePublished" content={post.publishedAt} />
+          <meta itemProp="dateModified" content={post.updatedAt ?? post.publishedAt} />
+          <meta itemProp="author" content={post.author.name} />
+          <meta itemProp="publisher" content={siteConfig.name} />
+          <meta itemProp="articleSection" content={post.category} />
+          <meta itemProp="keywords" content={post.tags.join(", ")} />
+          <meta itemProp="timeRequired" content={`PT${post.readingTime}M`} />
 
-          {/* Render HTML content safely — in production use a sanitizer */}
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </article>
 
-        {/* ── Tags + Share ───────────────────────────────── */}
+        {/* ── Tags + Share ────────────────────────────────── */}
         <div className="max-w-3xl mx-auto px-5 mb-16">
-          {/* Tags */}
+          {/* Tags — internal linking + topic signals */}
           <div className="flex items-center gap-2 flex-wrap mb-8">
             <span className="text-xs font-semibold text-[var(--text3)] uppercase tracking-wider mr-1">
               Tags:
@@ -236,18 +274,17 @@ export default async function BlogPostPage({
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)]"
+                className="text-xs px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] cursor-default transition-colors"
               >
                 #{tag}
               </span>
             ))}
           </div>
 
-          {/* Share */}
           <ShareButtons url={url} title={post.title} />
         </div>
 
-        {/* ── Related Posts ──────────────────────────────── */}
+        {/* ── Related Posts — internal linking boost ──────── */}
         {related.length > 0 && (
           <section
             className="max-w-6xl mx-auto px-5 py-12 border-t border-[var(--border)]"
@@ -257,11 +294,8 @@ export default async function BlogPostPage({
               <p className="text-xs font-bold uppercase tracking-widest text-[var(--accent2)] mb-2">
                 ✦ Continue Reading
               </p>
-              <h2
-                id="related-heading"
-                className="font-serif font-bold text-2xl text-[var(--text)]"
-              >
-                Related Posts
+              <h2 id="related-heading" className="font-serif font-bold text-2xl text-[var(--text)]">
+                Related Articles
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -281,7 +315,7 @@ export default async function BlogPostPage({
   );
 }
 
-/* ── Share Buttons (client island) ───────────────────────── */
+/* ── Share Buttons ────────────────────────────────────────── */
 function ShareButtons({ url, title }: { url: string; title: string }) {
   const encoded = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
@@ -296,43 +330,22 @@ function ShareButtons({ url, title }: { url: string; title: string }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on Twitter"
-        className="
-          w-9 h-9 rounded-full flex items-center justify-center text-sm
-          bg-[var(--surface)] border border-[var(--border)]
-          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
-          transition-all duration-200 hover:-translate-y-0.5
-        "
-      >
-        𝕏
-      </a>
+        className="w-9 h-9 rounded-full flex items-center justify-center text-sm bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200 hover:-translate-y-0.5"
+      >𝕏</a>
       <a
         href={`https://wa.me/?text=${encodedTitle}%20${encoded}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on WhatsApp"
-        className="
-          w-9 h-9 rounded-full flex items-center justify-center text-sm
-          bg-[var(--surface)] border border-[var(--border)]
-          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
-          transition-all duration-200 hover:-translate-y-0.5
-        "
-      >
-        💬
-      </a>
+        className="w-9 h-9 rounded-full flex items-center justify-center text-sm bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200 hover:-translate-y-0.5"
+      >💬</a>
       <a
         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encoded}&title=${encodedTitle}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on LinkedIn"
-        className="
-          w-9 h-9 rounded-full flex items-center justify-center text-sm
-          bg-[var(--surface)] border border-[var(--border)]
-          text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)]
-          transition-all duration-200 hover:-translate-y-0.5
-        "
-      >
-        in
-      </a>
+        className="w-9 h-9 rounded-full flex items-center justify-center text-sm bg-[var(--surface)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200 hover:-translate-y-0.5"
+      >in</a>
     </div>
   );
 }

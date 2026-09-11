@@ -3,18 +3,30 @@ import { AUTHORS } from "./authors";
 import { siteConfig } from "./config";
 
 // ============================================================
-//  RAW POST DATA
+//  QUILLORA — BLOG POST DATA
+//  SEO-optimized: titles, excerpts, tags — research based
 // ============================================================
 
 const RAW_POSTS: BlogPost[] = [
   {
     id: 1,
     slug: "ai-reshaping-every-industry",
-    title: "The Silent Revolution: How AI is Quietly Reshaping Every Industry",
+    // Primary keyword: "how AI is reshaping industries" (high intent, 2026 trending)
+    // LSI: artificial intelligence business transformation, AI future of work
+    title: "How AI is Quietly Reshaping Every Industry in 2026",
     excerpt:
-      "Artificial intelligence isn't arriving with fanfare — it's already embedded in the tools, workflows, and decisions that define modern business. Here's what's really happening beneath the surface.",
+      "Artificial intelligence isn't arriving with fanfare — it's already embedded in the tools, workflows, and decisions defining modern business. Here's what's really happening beneath the surface.",
     category: "Technology",
-    tags: ["artificial intelligence", "future of work", "machine learning", "industry"],
+    tags: [
+      "artificial intelligence",
+      "AI in business",
+      "future of work",
+      "machine learning",
+      "AI automation",
+      "digital transformation",
+      "AI trends 2026",
+      "industry disruption",
+    ],
     author: AUTHORS.arjun,
     publishedAt: "2026-09-08T09:00:00Z",
     updatedAt: "2026-09-10T12:00:00Z",
@@ -46,14 +58,27 @@ const RAW_POSTS: BlogPost[] = [
 <p>The silent revolution is already here. The only question is whether you're participating in it or watching from the sidelines.</p>
     `.trim(),
   },
+
   {
     id: 2,
     slug: "minimalism-in-ui-design",
+    // Primary keyword: "minimalism in UI design" (strong design community search)
+    // LSI: minimal UX, clean interface design, less is more design
     title: "Why Minimalism in UI Design is Harder Than It Looks",
     excerpt:
-      "Stripping away everything unnecessary requires a deep understanding of what's essential. Great minimal design isn't absence — it's precision.",
+      "Stripping a design down to its essentials requires more skill than adding to it. Great minimal UI isn't about absence — it's about deliberate, ruthless precision.",
     category: "Design",
-    tags: ["ui design", "minimalism", "ux", "product design"],
+    tags: [
+      "ui design",
+      "minimalism",
+      "ux design",
+      "product design",
+      "minimal interface",
+      "design principles",
+      "clean design",
+      "user experience",
+      "web design",
+    ],
     author: AUTHORS.priya,
     publishedAt: "2026-09-05T10:00:00Z",
     readingTime: 5,
@@ -85,14 +110,27 @@ const RAW_POSTS: BlogPost[] = [
 <p>Minimalism done well is invisible. The user never thinks about the design — they just accomplish their goal.</p>
     `.trim(),
   },
+
   {
     id: 3,
     slug: "reading-in-2026",
-    title: "Reading in 2026: How Digital Culture Changed What We Read — and Why",
+    // Primary keyword: "reading habits 2026" + "long form reading digital age"
+    // LSI: attention economy, deep reading, digital reading culture
+    title: "The Reading Renaissance: Why Long-Form Content is Thriving in 2026",
     excerpt:
-      "Long-form reading is experiencing a quiet renaissance, even as attention spans are being attacked from every angle. The paradox is revealing.",
+      "Despite shrinking attention spans and infinite scrolling, long-form reading is making a comeback. Here's what changed — and what it means for how we consume ideas.",
     category: "Culture",
-    tags: ["reading", "attention", "media", "books", "digital culture"],
+    tags: [
+      "reading habits",
+      "long form content",
+      "attention economy",
+      "digital culture",
+      "books",
+      "deep reading",
+      "media consumption",
+      "newsletter",
+      "content culture 2026",
+    ],
     author: AUTHORS.sana,
     publishedAt: "2026-09-02T08:00:00Z",
     readingTime: 6,
@@ -117,14 +155,28 @@ const RAW_POSTS: BlogPost[] = [
 <p>Curated newsletters, reading clubs, and thoughtful recommendation engines have replaced the algorithmic randomness of social feeds. What you read is increasingly shaped by people you trust, not engagement metrics.</p>
     `.trim(),
   },
+
   {
     id: 4,
     slug: "science-of-habit-formation",
+    // Primary keyword: "science of habit formation" (high volume, informational intent)
+    // LSI: how long to form a habit, habit loop, behavior change science
     title: "The Science of Habit Formation: What Research Actually Says",
     excerpt:
-      "Forget the 21-day myth. Building lasting habits is more nuanced — and more achievable — than the self-help industry suggests.",
+      "The 21-day habit myth is wrong. Here's what neuroscience and behavioral research actually reveal about building habits that stick — and why identity matters more than willpower.",
     category: "Science",
-    tags: ["habits", "neuroscience", "behavior change", "psychology"],
+    tags: [
+      "habit formation",
+      "neuroscience",
+      "behavior change",
+      "psychology",
+      "habit loop",
+      "how to build habits",
+      "21 day myth",
+      "basal ganglia",
+      "productivity science",
+      "self improvement",
+    ],
     author: AUTHORS.rahul,
     publishedAt: "2026-08-28T07:00:00Z",
     readingTime: 8,
@@ -152,14 +204,28 @@ const RAW_POSTS: BlogPost[] = [
 <p>Stop counting days. Track consistency of context — same time, same place, same trigger. The environmental cue matters more than the calendar. The most durable habits don't feel like discipline after a while. They feel like identity.</p>
     `.trim(),
   },
+
   {
     id: 5,
     slug: "financial-independence-at-35",
-    title: "Financial Independence at 35: A Realistic Framework",
+    // Primary keyword: "financial independence at 35" (FIRE movement, high intent)
+    // LSI: FIRE movement, retire early, savings rate, FI number
+    title: "Financial Independence at 35: A Realistic Step-by-Step Framework",
     excerpt:
-      "Financial independence isn't a fantasy for the ultra-wealthy. It's a set of principles available to ordinary earners — if you start thinking about it differently.",
+      "Financial independence is not just for the ultra-wealthy. With the right savings rate, investment strategy, and mindset shift, it's achievable for ordinary earners — here's the proven framework.",
     category: "Finance",
-    tags: ["financial independence", "investing", "personal finance", "FIRE"],
+    tags: [
+      "financial independence",
+      "FIRE movement",
+      "retire early",
+      "personal finance",
+      "investing",
+      "savings rate",
+      "index funds",
+      "FI number",
+      "wealth building",
+      "financial freedom",
+    ],
     author: AUTHORS.vikram,
     publishedAt: "2026-08-22T09:00:00Z",
     readingTime: 9,
@@ -192,14 +258,28 @@ const RAW_POSTS: BlogPost[] = [
 <p>FI planning forces you to answer a question most people never explicitly ask: what do I actually want my life to look like? The answer often reveals that the target is closer than you think.</p>
     `.trim(),
   },
+
   {
     id: 6,
     slug: "sleep-recovery-performance",
-    title: "Sleep, Recovery, and Performance: What Serious Athletes Know That You Don't",
+    // Primary keyword: "sleep and athletic performance" + "sleep optimization"
+    // LSI: sleep recovery athletes, sleep science, performance sleep
+    title: "Sleep Science: How Elite Athletes Optimize Recovery for Peak Performance",
     excerpt:
-      "Elite athletes don't just train harder — they recover smarter. The science of sleep optimization is the most underutilized performance advantage available.",
+      "Sleep is the most underutilized performance advantage in sport and life. Here's what the research shows, what elite athletes actually do, and the simple protocols that work.",
     category: "Health",
-    tags: ["sleep", "recovery", "performance", "athletes", "health"],
+    tags: [
+      "sleep optimization",
+      "athletic performance",
+      "sleep science",
+      "recovery",
+      "sleep and health",
+      "elite athletes sleep",
+      "performance recovery",
+      "sleep deprivation effects",
+      "health optimization",
+      "wellness",
+    ],
     author: AUTHORS.ananya,
     publishedAt: "2026-08-15T08:00:00Z",
     readingTime: 6,
@@ -224,14 +304,28 @@ const RAW_POSTS: BlogPost[] = [
 <p>Keep a consistent sleep and wake time including weekends. Drop room temperature to 18–19°C. Eliminate blue light exposure for 90 minutes pre-bed. These changes alone produce measurable performance improvements within two weeks.</p>
     `.trim(),
   },
+
   {
     id: 7,
     slug: "slow-travel-30-days-one-city",
-    title: "Slow Travel: Why Spending 30 Days in One City Changes Everything",
+    // Primary keyword: "slow travel" + "digital nomad living" (high growth searches)
+    // LSI: long term travel, living abroad, slow travel benefits
+    title: "Slow Travel: Why Living in One City for 30 Days Changes How You See the World",
     excerpt:
-      "Speed tourism gives you a checklist. Slow travel gives you a life. The philosophy — and practice — of staying long enough to actually know a place.",
+      "Speed tourism gives you a checklist. Slow travel gives you a life. The philosophy, economics, and surprising discoveries of staying long enough to actually know a place.",
     category: "Travel",
-    tags: ["slow travel", "digital nomad", "minimalism", "travel philosophy"],
+    tags: [
+      "slow travel",
+      "digital nomad",
+      "long term travel",
+      "travel lifestyle",
+      "living abroad",
+      "travel philosophy",
+      "budget travel",
+      "remote work travel",
+      "expat life",
+      "mindful travel",
+    ],
     author: AUTHORS.meera,
     publishedAt: "2026-08-08T10:00:00Z",
     readingTime: 5,
@@ -255,14 +349,29 @@ const RAW_POSTS: BlogPost[] = [
 <p>The best travel experiences I've had weren't at famous landmarks. They were Tuesday afternoons in unremarkable neighborhoods, talking to someone I wouldn't have met if I'd been moving faster.</p>
     `.trim(),
   },
+
   {
     id: 8,
     slug: "stoicism-and-second-chances",
-    title: "The Philosophy of Second Chances: What Stoicism Gets Right About Failure",
+    // Primary keyword: "stoicism and failure" + "stoic philosophy practical"
+    // LSI: Marcus Aurelius lessons, Epictetus dichotomy of control, resilience mindset
+    title: "Stoicism and Failure: What Ancient Philosophy Teaches Us About Second Chances",
     excerpt:
-      "The Stoics weren't passive fatalists. They were relentless reframers. Their approach to setbacks contains something genuinely useful for modern life.",
+      "The Stoics weren't passive fatalists — they were relentless reframers. Here's what Epictetus, Marcus Aurelius, and modern psychology agree on about recovering from setbacks.",
     category: "Life",
-    tags: ["stoicism", "philosophy", "failure", "resilience", "mindset"],
+    tags: [
+      "stoicism",
+      "philosophy",
+      "failure and resilience",
+      "Marcus Aurelius",
+      "Epictetus",
+      "growth mindset",
+      "second chances",
+      "mental resilience",
+      "self improvement",
+      "life philosophy",
+      "dichotomy of control",
+    ],
     author: AUTHORS.kabir,
     publishedAt: "2026-08-01T09:00:00Z",
     readingTime: 7,
@@ -296,7 +405,6 @@ const RAW_POSTS: BlogPost[] = [
 //  DATA ACCESS FUNCTIONS
 // ============================================================
 
-/** All posts sorted newest first */
 export function getAllPosts(): BlogPost[] {
   return [...RAW_POSTS].sort(
     (a, b) =>
@@ -304,22 +412,18 @@ export function getAllPosts(): BlogPost[] {
   );
 }
 
-/** Get single post by slug — undefined if not found */
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return RAW_POSTS.find((p) => p.slug === slug);
 }
 
-/** Posts for a given category */
 export function getPostsByCategory(category: Category): BlogPost[] {
   return getAllPosts().filter((p) => p.category === category);
 }
 
-/** Featured post — first featured, fallback to newest */
 export function getFeaturedPost(): BlogPost {
   return getAllPosts().find((p) => p.featured) ?? getAllPosts()[0];
 }
 
-/** Related posts — same category, excluding current */
 export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
   const current = getPostBySlug(slug);
   if (!current) return getAllPosts().slice(0, limit);
@@ -328,30 +432,24 @@ export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
     .slice(0, limit)
     .concat(
       getAllPosts()
-        .filter(
-          (p) => p.slug !== slug && p.category !== current.category
-        )
+        .filter((p) => p.slug !== slug && p.category !== current.category)
         .slice(0, limit)
     )
     .slice(0, limit);
 }
 
-/** All slugs — used by generateStaticParams */
 export function getAllSlugs(): string[] {
   return RAW_POSTS.map((p) => p.slug);
 }
 
-/** All unique categories that have at least one post */
 export function getUsedCategories(): Category[] {
   return [...new Set(RAW_POSTS.map((p) => p.category))];
 }
 
-/** Full canonical URL for a post */
 export function postUrl(slug: string): string {
   return `${siteConfig.url}/blog/${slug}`;
 }
 
-/** Format ISO date to readable string */
 export function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-US", {
     year: "numeric",
