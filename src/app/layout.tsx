@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { WebsiteJsonLd } from "@/components/seo/JsonLd";
+
+const GA_ID  = process.env.NEXT_PUBLIC_GA_ID  ?? "G-G2XHV6ZK90";
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MNLF3NQ5";
 
 /* ── Fonts ────────────────────────────────────────────────── */
 const inter = Inter({
@@ -100,9 +104,9 @@ export const metadata: Metadata = {
     },
   },
 
-  /* ── Verification (fill in real values) ─────────────────── */
+  /* ── Verification ───────────────────────────────────────── */
   verification: {
-    google: process.env.GOOGLE_SITE_VERIFICATION ?? "",
+    google: process.env.GOOGLE_SITE_VERIFICATION ?? "google5cf17b48e7a56fbf",
   },
 
   /* ── Icons ───────────────────────────────────────────────── */
@@ -143,6 +147,38 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
+        {/* ── Google Tag Manager (noscript fallback) ── */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
+
+        {/* ── Google Tag Manager ── */}
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`}
+        </Script>
+
+        {/* ── Google Analytics GA4 ── */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}', { page_path: window.location.pathname });`}
+        </Script>
+
         <ThemeProvider>
           {/* Website-level JSON-LD structured data */}
           <WebsiteJsonLd />
