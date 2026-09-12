@@ -154,6 +154,13 @@ export default function RootLayout({
           data-cfasync="false"
         />
 
+        {/* ── Vignette Banner Ad ── */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='11779339',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+          }}
+        />
+
         {/* ── Service Worker Registration for Push Ads ── */}
         <script
           dangerouslySetInnerHTML={{
