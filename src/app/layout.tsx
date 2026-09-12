@@ -157,7 +157,7 @@ export default function RootLayout({
         {/* ── Vignette Banner Ad ── */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(s){s.dataset.zone='11779339',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+            __html: `(function(s){s.dataset.zone='11779947',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
           }}
         />
 
