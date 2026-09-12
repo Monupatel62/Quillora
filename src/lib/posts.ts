@@ -1,6 +1,7 @@
 import type { BlogPost, Category } from "@/types/blog";
 import { AUTHORS } from "./authors";
 import { siteConfig } from "./config";
+import { ALL_JOB_POSTS } from "./jobs/index";
 
 // ============================================================
 //  QUILLORA — BLOG POST DATA
@@ -628,19 +629,22 @@ const RAW_POSTS: BlogPost[] = [
   },
 ];
 
+// Combine core posts + all 25 India IT job posts
+const ALL_POSTS: BlogPost[] = [...RAW_POSTS, ...ALL_JOB_POSTS];
+
 // ============================================================
 //  DATA ACCESS FUNCTIONS
 // ============================================================
 
 export function getAllPosts(): BlogPost[] {
-  return [...RAW_POSTS].sort(
+  return [...ALL_POSTS].sort(
     (a, b) =>
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
-  return RAW_POSTS.find((p) => p.slug === slug);
+  return ALL_POSTS.find((p) => p.slug === slug);
 }
 
 export function getPostsByCategory(category: Category): BlogPost[] {
@@ -666,11 +670,11 @@ export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
 }
 
 export function getAllSlugs(): string[] {
-  return RAW_POSTS.map((p) => p.slug);
+  return ALL_POSTS.map((p) => p.slug);
 }
 
 export function getUsedCategories(): Category[] {
-  return [...new Set(RAW_POSTS.map((p) => p.category))];
+  return [...new Set(ALL_POSTS.map((p) => p.category))];
 }
 
 export function postUrl(slug: string): string {

@@ -71,6 +71,14 @@ export const CATEGORIES: CategoryMeta[] = [
       "Philosophy, Stoicism, habit formation, mindset, and practical wisdom for living with more clarity, resilience, and purpose.",
     color: "#f472b6",
   },
+  {
+    name: "Jobs",
+    slug: "jobs",
+    icon: "💼",
+    description:
+      "Latest IT job openings in India — by city, company, role, and experience level. Real links, real salaries, real hiring data.",
+    color: "#3b82f6",
+  },
 ];
 
 /* ── Per-category SEO keywords ──────────────────────────────
@@ -156,6 +164,16 @@ export const CATEGORY_KEYWORDS: Record<string, string[]> = {
     "habit formation",
     "resilience mindset",
     "practical philosophy",
+  ],
+  jobs: [
+    "IT jobs India 2026",
+    "software jobs India",
+    "tech jobs India",
+    "IT job vacancies India",
+    "India IT hiring 2026",
+    "jobs in Bangalore",
+    "jobs in Hyderabad",
+    "fresher IT jobs India",
   ],
 };
 

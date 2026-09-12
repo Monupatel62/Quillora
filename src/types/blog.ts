@@ -10,7 +10,8 @@ export type Category =
   | "Finance"
   | "Health"
   | "Travel"
-  | "Life";
+  | "Life"
+  | "Jobs";
 
 export interface Author {
   name: string;
