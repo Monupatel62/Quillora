@@ -1,6 +1,11 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useSyncExternalStore,
+} from "react";
 
 type Theme = "light" | "dark";
 
@@ -14,36 +19,50 @@ const ThemeContext = createContext<ThemeContextValue>({
   toggle: () => {},
 });
 
+const THEME_CHANGE_EVENT = "quillora-theme-change";
+
+function getTheme(): Theme {
+  if (typeof window === "undefined") return "dark";
+
+  const stored = localStorage.getItem("quillora-theme");
+  if (stored === "light" || stored === "dark") return stored;
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
+function subscribeToTheme(callback: () => void) {
+  window.addEventListener("storage", callback);
+  window.addEventListener(THEME_CHANGE_EVENT, callback);
+  return () => {
+    window.removeEventListener("storage", callback);
+    window.removeEventListener(THEME_CHANGE_EVENT, callback);
+  };
+}
+
+function applyTheme(theme: Theme) {
+  const root = document.documentElement;
+  root.classList.toggle("dark", theme === "dark");
+  localStorage.setItem("quillora-theme", theme);
+}
+
+function getServerTheme(): Theme {
+  return "dark";
+}
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const theme = useSyncExternalStore(
+    subscribeToTheme,
+    getTheme,
+    getServerTheme,
+  );
 
-  /* Sync with localStorage on mount — avoids flash */
-  useEffect(() => {
-    const stored = localStorage.getItem("quillora-theme") as Theme | null;
-    const system = window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-    const resolved = stored ?? system;
-    setTheme(resolved);
-    applyTheme(resolved);
-  }, []);
-
-  function applyTheme(t: Theme) {
-    const root = document.documentElement;
-    if (t === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("quillora-theme", t);
-  }
+  useEffect(() => applyTheme(theme), [theme]);
 
   function toggle() {
-    setTheme((prev) => {
-      const next = prev === "dark" ? "light" : "dark";
-      applyTheme(next);
-      return next;
-    });
+    applyTheme(theme === "dark" ? "light" : "dark");
+    window.dispatchEvent(new Event(THEME_CHANGE_EVENT));
   }
 
   return (

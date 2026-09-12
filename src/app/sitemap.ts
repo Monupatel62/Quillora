@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllPosts, getAllSlugs } from "@/lib/posts";
+import { getAllPosts } from "@/lib/posts";
 import { CATEGORIES } from "@/lib/categories";
 import { siteConfig } from "@/lib/config";
 

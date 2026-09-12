@@ -24,9 +24,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
-  useEffect(() => setMenuOpen(false), [pathname]);
-
   return (
     <header
       className={`
@@ -151,6 +148,7 @@ export function Navbar() {
                 <Link
                   href={link.href}
                   role="menuitem"
+                  onClick={() => setMenuOpen(false)}
                   className="
                     flex items-center py-3 px-2 text-sm font-medium
                     text-[var(--text2)] hover:text-[var(--text)]
