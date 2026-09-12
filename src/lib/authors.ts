@@ -60,4 +60,12 @@ export const AUTHORS: Record<string, Author> = {
     avatar: "KD",
     role: "Philosophy & Culture Writer",
   },
+  jessica: {
+    name: "Jessica Monroe",
+    slug: "jessica-monroe",
+    bio: "Career strategist and former Fortune 500 recruiter with 12 years placing candidates across tech, healthcare, and finance. Now helps job seekers navigate the modern hiring process.",
+    avatar: "JM",
+    role: "Career Strategist & Recruiter",
+    twitter: "@jessicamonroe_careers",
+  },
 };
