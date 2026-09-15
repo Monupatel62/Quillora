@@ -12,14 +12,17 @@ export const COMPANY_POSTS_A: BlogPost[] = [
     category: "Jobs",
     tags: [
       "TCS jobs 2026",
-      "TCS NQT",
+      "TCS NQT 2026",
       "TCS fresher salary",
       "Tata Consultancy Services hiring",
-      "TCS Digital",
-      "TCS Prime",
+      "TCS Digital track",
+      "TCS Prime track",
       "IT fresher jobs India",
       "TCS campus recruitment",
-      "software engineer jobs 2026",
+      "TCS interview process",
+      "TCS NQT syllabus",
+      "TCS bond period",
+      "software engineer jobs India 2026",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T13:00:00Z",
@@ -158,6 +161,37 @@ Tata Consultancy Services (TCS) is India's largest IT employer and the world's s
   "TCS reported a net headcount addition of 5,000+ employees in Q1 FY2026, signaling a recovery in fresher hiring after the cautious FY2025 cycle. The company plans to onboard ~40,000 freshers over FY2026, with NQT registration windows opening quarterly." — TCS Q1 FY2026 Investor Release
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">TCS Interview Process 2026 (NQT)</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#1d4ed8;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#93c5fd;margin-bottom:4px;">TCS NQT — Online Test</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">3 sections: Cognitive Skills (verbal + reasoning), Programming Logic (MCQ-based), and Coding (2 problems in C/Java/Python). Duration: 120 min. Score determines which track (Ninja/Digital/Prime) you qualify for.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#1d4ed8;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#93c5fd;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS fundamentals — DBMS, OS, OOP, Data Structures. One programming language in depth. For Digital/Prime tracks, system design basics and one coding problem expected. Duration: 30–45 min.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#1d4ed8;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#93c5fd;margin-bottom:4px;">Managerial Round (Digital/Prime only)</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Problem-solving, situational questions, and discussion of projects. Tests communication and thinking process. Ninja track candidates typically skip this round.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#1d4ed8;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">4</span>
+    <div><div style="font-weight:700;color:#93c5fd;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Relocation readiness, TCS values, career goals. TCS has a <strong style="color:#e2e8f0;">1-year bond period</strong> (₹50,000 penalty if you leave within 1 year). Offer letter within 2–3 weeks.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(29,78,216,0.08);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#60a5fa;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>NQT Ninja (₹3.36L) needs 40% cut-off; Digital (₹7L) needs 60%+; Prime (₹9–12L) needs 80%+</li>
+    <li>60% of TCS FY2026 fresher hires were AI-skilled — add Python and SQL to your resume before applying</li>
+    <li>Practice on PrepInsta TCS mock tests — pattern closely mirrors actual NQT</li>
+    <li>TCS bond is ₹50,000 if you leave within 1 year — factor this into your decision</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -172,12 +206,15 @@ Tata Consultancy Services (TCS) is India's largest IT employer and the world's s
     tags: [
       "Infosys jobs 2026",
       "Infosys fresher salary",
-      "InfyTQ",
+      "InfyTQ 2026",
       "Infosys SP track",
-      "Infosys campus hiring",
+      "Infosys campus hiring 2026",
       "IT fresher jobs India",
       "Infosys Systems Engineer",
-      "software jobs 2026",
+      "Infosys interview process",
+      "Infosys Power Programmer",
+      "Infosys bond period",
+      "software jobs India 2026",
       "Infosys lateral hiring",
     ],
     author: AUTHORS.jessica,
@@ -317,6 +354,33 @@ Infosys is India's second-largest IT services company with over <strong>320,000 
   "Infosys announced plans to hire 25,000 freshers in FY2026, reversing three consecutive quarters of net headcount decline. The Mysuru training campus — the world's largest corporate training facility — is running at full capacity for the first time since 2022." — Infosys FY2026 Annual Report Preview
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Infosys Interview Process 2026 (InfyTQ)</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(99,102,241,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#4338ca;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#a5b4fc;margin-bottom:4px;">InfyTQ Online Certification</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Register on infytq.com, complete free learning modules, and pass the certification exam (aptitude + coding). Fully online. Passing makes you eligible for Infosys's off-campus hiring. No CGPA cut-off for off-campus route.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(99,102,241,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#4338ca;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#a5b4fc;margin-bottom:4px;">Technical Interview (Online)</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS: DBMS, OS, OOP concepts, and programming. For SP (Systems Engineer) track — basic coding. For Power Programmer track — DSA problems (arrays, recursion, strings) + system design basics expected.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(99,102,241,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#4338ca;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#a5b4fc;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Standard fitment check. Infosys has a <strong style="color:#e2e8f0;">service agreement (not a monetary bond)</strong> — freshers are expected to serve 1 year. If you leave before, no financial penalty but career records are affected.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(67,56,202,0.08);border:1px solid rgba(99,102,241,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#a5b4fc;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>InfyTQ off-campus route is open year-round — you don't need campus placement to join Infosys</li>
+    <li>Power Programmer (₹8 LPA) requires solving 2 LeetCode mediums — start with arrays and strings</li>
+    <li>Infosys Global Training at Mysuru is 3–6 months — include willingness to relocate in your HR answers</li>
+    <li>Infosys ranked #1 in India for career growth (2026) — internal mobility is genuinely strong</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -331,13 +395,16 @@ Infosys is India's second-largest IT services company with over <strong>320,000 
     tags: [
       "Wipro jobs 2026",
       "Wipro fresher salary",
-      "Wipro NLTH",
-      "Wipro Elite",
-      "Wipro WILP",
+      "Wipro NLTH 2026",
+      "Wipro Elite track",
+      "Wipro WILP program",
       "IT fresher jobs India",
-      "Wipro campus hiring",
-      "software engineer salary 2026",
+      "Wipro campus hiring 2026",
+      "Wipro interview process",
+      "Wipro bond period",
       "Wipro lateral hiring",
+      "software engineer salary India 2026",
+      "Wipro turbo track",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T14:00:00Z",
@@ -475,6 +542,33 @@ Wipro Limited is one of India's "Big Four" IT companies, employing over <strong>
   "Wipro's CEO Srini Pallia confirmed in the FY2026 earnings call that the company would resume campus hiring at pre-pandemic scale, targeting 15,000–18,000 freshers for the year. The Elite NLTH track saw a 40% increase in registered candidates compared to FY2025." — Wipro Q1 FY2026 Earnings Call Transcript
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Wipro Interview Process 2026 (NLTH)</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(139,92,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#6d28d9;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#c4b5fd;margin-bottom:4px;">Online Test — Aptitude + Coding</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">3 sections: Quantitative (20 min), Verbal (15 min), Coding (2 problems in C/C++/Java/Python, 45 min). Conducted on Mettl/AMCAT platform. Turbo track candidates need higher coding scores.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(139,92,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#6d28d9;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#c4b5fd;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">DBMS, OOP, OS, and one primary language. Resume project discussion mandatory. Wipro frequently asks about cloud basics (AWS/Azure awareness) and agile methodology in 2026.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(139,92,246,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#6d28d9;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#c4b5fd;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Fitment, relocation, career goals. Wipro has a <strong style="color:#e2e8f0;">1-year service agreement</strong>. Onboarding happens in 3 cohorts: Nov, Feb, June. Joining delay of 3–6 months after offer is common.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(109,40,217,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#c4b5fd;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>Wipro Turbo (₹6.5 LPA) requires top coding scores — practice HackerRank Easy/Medium problems</li>
+    <li>WILP (Working & Integrated Learning Program) is for working professionals — different from campus NLTH</li>
+    <li>All three tracks (NLTH, Elite, WILP) apply buttons on careers.wipro.com — apply to the correct track-specific page</li>
+    <li>Wipro joining can take 4–6 months after offer — keep applying elsewhere while waiting</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -489,13 +583,16 @@ Wipro Limited is one of India's "Big Four" IT companies, employing over <strong>
     tags: [
       "HCLTech jobs 2026",
       "HCLTech fresher salary",
-      "HCL campus hiring",
+      "HCL campus hiring 2026",
       "HCLTech GET program",
       "HCL Technologies careers",
       "IT fresher jobs India",
       "HCLTech lateral hiring",
-      "software engineer salary 2026",
-      "HCL TechBee",
+      "HCLTech interview process",
+      "HCL TechBee program",
+      "HCLTech bond period",
+      "software engineer salary India 2026",
+      "HCLTech Forbes best employer",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T14:30:00Z",
@@ -632,6 +729,37 @@ HCLTech (formerly HCL Technologies) is India's third-largest IT services company
 <blockquote style="border-left:4px solid #06b6d4;background:rgba(8,145,178,0.1);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:2rem 0;color:#cbd5e1;font-style:italic;">
   "HCLTech posted revenue of $13.3 billion in FY2026, maintaining a strong hiring trajectory with over 20,000 freshers onboarded during the year. The company's TechBee program has now trained 12,000+ students since its 2018 launch, making it one of India's most successful early-career initiatives." — HCLTech Annual Report FY2026
 </blockquote>
+
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">HCLTech Interview Process 2026</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0e7490;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#67e8f9;margin-bottom:4px;">Online Test</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Quantitative aptitude, logical reasoning, English, and a coding section (2 problems). Duration: 90 minutes. Conducted via HackerEarth or Mettl platform. 60% aggregate minimum.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0e7490;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#67e8f9;margin-bottom:4px;">Technical GD (Group Discussion)</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Unique to HCLTech — a group discussion on a tech or current affairs topic. Tests communication, listening, and ability to present structured arguments. Groups of 8–10 candidates, 15–20 minutes.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0e7490;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#67e8f9;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS: DBMS, OS, OOP, and one programming language. HCLTech places strong emphasis on cloud and DevOps awareness in 2026 — basic AWS, Docker, and Linux knowledge helps.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0e7490;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">4</span>
+    <div><div style="font-weight:700;color:#67e8f9;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Relocation, career goals, Noida HQ awareness. HCLTech has <strong style="color:#e2e8f0;">no monetary bond</strong> for freshers — a significant advantage. TechBee students (12th pass) go through a separate track.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(14,116,144,0.08);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#22d3ee;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>The GD round is the biggest differentiator — most candidates fail here, not in technical rounds</li>
+    <li>HCLTech Forbes "World's Best Employer" status means strong job stability — mention this if asked why HCL</li>
+    <li>TechBee is for 12th-pass students — unique program allowing you to earn (₹1.8L/yr) while getting a B.Tech degree</li>
+    <li>No bond period = more flexibility than TCS/Wipro — useful negotiating point for multiple offers</li>
+  </ul>
+</div>
 
 </article>`,
   },
