@@ -14,12 +14,15 @@ export const COMPANY_POSTS_B: BlogPost[] = [
       "Cognizant jobs 2026",
       "Cognizant fresher salary",
       "GenC Cognizant",
-      "GenC Next",
-      "Cognizant campus hiring",
+      "GenC Next Cognizant",
+      "GenC Elevate AI track",
+      "Cognizant campus hiring 2026",
       "IT fresher jobs India",
       "Cognizant lateral hiring",
       "software engineer salary 2026",
-      "Cognizant interview",
+      "Cognizant interview process",
+      "Cognizant AMCAT test",
+      "Cognizant work from home",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T15:00:00Z",
@@ -157,6 +160,37 @@ Cognizant Technology Solutions is one of the world's leading IT professional ser
   "Cognizant resumed large-scale fresher hiring in FY2026, onboarding over 30,000 GenC candidates as demand for digital and AI services accelerated. The GenC Next track grew by 60% in candidate volume, reflecting a shift toward higher-skilled entry-level talent." — Cognizant Q2 FY2026 Investor Update
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Cognizant Interview Process 2026</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(14,165,233,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0284c7;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#7dd3fc;margin-bottom:4px;">Online Aptitude Test (AMCAT-powered)</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Quantitative aptitude, logical reasoning, verbal ability, and a coding section (2 problems). Duration: 90 minutes. Minimum 60% aggregate required to appear.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(14,165,233,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0284c7;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#7dd3fc;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS fundamentals — OOPS, DBMS, OS, and one programming language (Java/Python/C++). Projects on resume are discussed. Duration: 30–45 minutes.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(14,165,233,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0284c7;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#7dd3fc;margin-bottom:4px;">Communication Assessment</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Verbal and written communication skills evaluated. Cognizant places high importance on client-facing communication. GenC Next candidates face an additional coding round here.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(14,165,233,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#0284c7;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">4</span>
+    <div><div style="font-weight:700;color:#7dd3fc;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Relocation readiness, career goals, notice period. No bond period for Cognizant freshers. Offer letter typically within 2 weeks of clearing all rounds.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(2,132,199,0.08);border:1px solid rgba(14,165,233,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#38bdf8;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>AMCAT cut-offs are higher than TCS NQT — practice 50+ verbal reasoning questions</li>
+    <li>For GenC Next, prepare 2 LeetCode medium-level problems in Java or Python</li>
+    <li>Know your resume projects deeply — every line may be questioned</li>
+    <li>Cognizant has <strong style="color:#e2e8f0;">no bond period</strong> for GenC freshers (unlike TCS/Wipro)</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -172,12 +206,15 @@ Cognizant Technology Solutions is one of the world's leading IT professional ser
       "Accenture jobs 2026",
       "Accenture fresher salary",
       "Accenture ASE",
-      "Accenture campus hiring",
+      "Accenture campus hiring 2026",
       "Accenture India careers",
       "IT fresher jobs India",
       "Accenture lateral hiring",
       "software engineer salary 2026",
       "Accenture interview process",
+      "Accenture AEXP track",
+      "Accenture bond period",
+      "Accenture work from home",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T15:30:00Z",
@@ -316,6 +353,33 @@ Accenture is a global professional services powerhouse with over <strong>750,000
   "Accenture India expanded its headcount to over 350,000 employees in FY2026, making it the single largest private-sector tech employer in the country. The company hired 50,000+ new employees globally in FY2026, with India accounting for roughly 40% of all new hires." — Accenture FY2026 Annual Report
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Accenture Interview Process 2026</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(192,38,211,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#a21caf;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#f0abfc;margin-bottom:4px;">Cognitive &amp; Technical Assessment</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Online test with 3 sections: Cognitive Ability (reasoning + quant), Technical Coding (1–2 problems in Java/Python/C), and Communication (essay + reading). Duration: 60–75 minutes.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(192,38,211,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#a21caf;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#f0abfc;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS concepts — DBMS, OS, networking basics. Programming logic (not heavy DSA for ASE track). Cloud and AI awareness questions are increasingly common in 2026 for Tech Dev Program candidates.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(192,38,211,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#a21caf;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#f0abfc;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Fitment, relocation, Accenture values discussion. No bond period for Accenture freshers. Offer typically issued within 3 weeks. Background verification is thorough — ensure all educational records are accurate.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(162,28,175,0.07);border:1px solid rgba(192,38,211,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#e879f9;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>ASE coding round is easier than TCS NQT — focus on basic loops, arrays, and strings</li>
+    <li>For Tech Dev Program, prepare cloud fundamentals (AWS basics, Docker concepts)</li>
+    <li>Accenture has <strong style="color:#e2e8f0;">no bond period</strong> — a significant advantage over TCS (1 yr) and Wipro (1 yr)</li>
+    <li>Communication test matters as much as the technical round — practice writing clear paragraphs</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -331,12 +395,15 @@ Accenture is a global professional services powerhouse with over <strong>750,000
       "Capgemini jobs 2026",
       "Capgemini fresher salary",
       "Capgemini GAME test",
-      "Capgemini campus hiring",
+      "Capgemini campus hiring 2026",
       "Capgemini India careers",
       "IT fresher jobs India",
       "Capgemini lateral hiring",
       "software engineer salary 2026",
       "Capgemini interview process",
+      "Capgemini bond period",
+      "Capgemini IndiGo campus",
+      "Capgemini work from home",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T16:00:00Z",
@@ -474,6 +541,33 @@ Capgemini is a French multinational IT services and consulting company with over
   "Capgemini India posted its strongest hiring quarter since 2022 in Q1 FY2026, onboarding over 8,000 freshers through the GAME process. The company's IndiGo campus program now covers 420 engineering institutions, making it one of the widest campus nets in the Indian IT industry." — Capgemini India HR Report FY2026
 </blockquote>
 
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Capgemini Interview Process 2026 (GAME)</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#059669;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#6ee7b7;margin-bottom:4px;">GAME Test (Global Aptitude &amp; Mindset Evaluation)</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">5 sections: Quantitative, Reasoning, English, Essay Writing, and Behavioral/Mindset. Duration: 115 minutes. Conducted online. No negative marking. Cut-off varies by college tier.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#059669;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#6ee7b7;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Core CS topics: DBMS, OOPS, OS, and programming (Java/Python). Resume projects discussed. For Tech Track candidates, 1–2 coding problems on arrays or strings are expected.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#059669;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#6ee7b7;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Standard fitment discussion. Capgemini has a <strong style="color:#e2e8f0;">1-year service agreement</strong> (not a monetary bond) for freshers — leaving before completion requires written notice only. No financial penalty.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(5,150,105,0.07);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#34d399;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>GAME's Behavioral section is unique — answers reveal personality fit, not just skills. Be consistent</li>
+    <li>The Essay Writing section is often ignored in prep — practice writing 150 words on a tech topic in 10 minutes</li>
+    <li>Tech Track requires cloud and coding skills — get AWS Cloud Practitioner before applying</li>
+    <li>Capgemini IndiGo college events offer direct PPO opportunities — check if your college is part of IndiGo</li>
+  </ul>
+</div>
+
 </article>`,
   },
 
@@ -489,12 +583,15 @@ Capgemini is a French multinational IT services and consulting company with over
       "Tech Mahindra jobs 2026",
       "Tech Mahindra fresher salary",
       "Tech Mahindra SmartAcademy",
-      "Tech Mahindra campus hiring",
-      "Tech Mahindra careers",
+      "Tech Mahindra campus hiring 2026",
+      "Tech Mahindra careers India",
       "IT fresher jobs India",
       "Tech Mahindra lateral hiring",
       "software engineer salary 2026",
-      "Tech Mahindra interview",
+      "Tech Mahindra interview process",
+      "Tech Mahindra GET program",
+      "Tech Mahindra bond period",
+      "Tech Mahindra 5G jobs",
     ],
     author: AUTHORS.jessica,
     publishedAt: "2026-09-11T16:30:00Z",
@@ -560,8 +657,8 @@ Tech Mahindra is part of the Mahindra Group and ranks among India's top five IT 
        style="display:inline-block;margin-top:0.75rem;color:#fb923c;font-size:0.85rem;text-decoration:underline;">Join SmartAcademy →</a>
   </div>
   <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(220,38,38,0.2);border-radius:10px;padding:1.25rem;">
-    <div style="font-weight:700;color:#fca5a5;margin-bottom:0.5rem;">🏆 TechM CodeVita (TCS parallel)</div>
-    <p style="font-size:0.9rem;color:#cbd5e1;margin:0 0 0.75rem;">Tech Mahindra's annual national coding contest open to college students. Top performers get direct interview calls and pre-placement offers with premium salary bands — bypassing the standard campus process.</p>
+    <div style="font-weight:700;color:#fca5a5;margin-bottom:0.5rem;">🏆 TechM Annual Coding Challenge</div>
+    <p style="font-size:0.9rem;color:#cbd5e1;margin:0 0 0.75rem;">Tech Mahindra's own national coding contest open to college students (separate from TCS CodeVita). Top performers get direct interview calls and pre-placement offers with premium salary bands, bypassing the standard campus process.</p>
     <span style="background:rgba(234,88,12,0.2);color:#fdba74;border:1px solid rgba(234,88,12,0.3);padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;">₹4 LPA + PPO eligible</span>
     <br/><a href="https://careers.techmahindra.com/" target="_blank" rel="noopener noreferrer"
        style="display:inline-block;margin-top:0.75rem;color:#fca5a5;font-size:0.85rem;text-decoration:underline;">Explore coding contest →</a>
@@ -632,6 +729,33 @@ Tech Mahindra is part of the Mahindra Group and ranks among India's top five IT 
 <blockquote style="border-left:4px solid #f97316;background:rgba(234,88,12,0.1);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:2rem 0;color:#cbd5e1;font-style:italic;">
   "Tech Mahindra reported a net headcount increase of 4,200 in FY2026 Q1, its first positive addition since FY2023. The SmartAcademy program enrolled 6,000 candidates in the same period, reflecting the company's strategy of building talent pipelines rather than relying solely on campus hiring." — Tech Mahindra Q1 FY2026 Earnings Release
 </blockquote>
+
+<h2 style="font-size:1.4rem;font-weight:700;color:#f1f5f9;margin:2rem 0 1rem;">Tech Mahindra Interview Process 2026</h2>
+
+<div style="display:grid;gap:0.75rem;margin-bottom:2rem;">
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(251,146,60,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#ea580c;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">1</span>
+    <div><div style="font-weight:700;color:#fdba74;margin-bottom:4px;">Online Test</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Aptitude (quantitative + logical), English, and a coding section (1–2 basic problems in C/Java/Python). Duration: 90 minutes. Conducted via MeritTrac or Mettl platform.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(251,146,60,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#ea580c;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">2</span>
+    <div><div style="font-weight:700;color:#fdba74;margin-bottom:4px;">Technical Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">DBMS, OS, networking basics, and one programming language. Tech Mahindra frequently asks about telecom concepts (4G/5G basics) — a differentiator from other IT companies. Resume projects discussed.</p></div>
+  </div>
+  <div style="background:rgba(15,23,42,0.85);border:1px solid rgba(251,146,60,0.2);border-radius:10px;padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="background:#ea580c;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;flex-shrink:0;">3</span>
+    <div><div style="font-weight:700;color:#fdba74;margin-bottom:4px;">HR Interview</div><p style="font-size:0.87rem;color:#94a3b8;margin:0;">Relocation readiness, notice period, career goals. Tech Mahindra has a <strong style="color:#e2e8f0;">1-year service agreement</strong> for freshers. Offer letter within 2–3 weeks of final round.</p></div>
+  </div>
+</div>
+
+<div style="background:rgba(234,88,12,0.07);border:1px solid rgba(251,146,60,0.2);border-radius:10px;padding:1.25rem;margin-bottom:2rem;">
+  <div style="font-weight:700;color:#fb923c;margin-bottom:8px;">💡 Quick Tips</div>
+  <ul style="font-size:0.88rem;color:#94a3b8;margin:0;padding-left:1.2rem;line-height:1.8;">
+    <li>Study basic 4G/5G telecom concepts — TechM's telecom vertical is huge and interviewers love this</li>
+    <li>SmartAcademy is open to non-engineering graduates too — broader entry path than most IT companies</li>
+    <li>TechM coding round is easier than TCS/Infosys — basic array and string problems are sufficient</li>
+    <li>Starting salary (₹3.25 LPA) is lower than peers but 2–3 year growth to ₹8–12 LPA is achievable with certifications</li>
+  </ul>
+</div>
 
 </article>`,
   },

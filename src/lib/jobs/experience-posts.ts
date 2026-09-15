@@ -149,7 +149,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
       <div style="width:52px;height:52px;background:linear-gradient(135deg,#3730a3,#4338ca);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">🟣</div>
       <div>
-        <div style="font-weight:800;font-size:1.1rem;">Cognizant GenC / GenC Elevate / GenC Pro</div>
+        <div style="font-weight:800;font-size:1.1rem;">Cognizant GenC / GenC Next / GenC Elevate</div>
         <div style="font-size:0.8rem;opacity:0.6;margin-top:2px;">Cognizant Technology Solutions · 18,000+ freshers annually</div>
       </div>
     </div>
@@ -167,7 +167,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
         <div style="font-weight:700;">60% (55% for some branches)</div>
       </div>
     </div>
-    <p style="margin:0 0 14px;font-size:0.9rem;opacity:0.85;">Cognizant runs three tracks based on aptitude + coding scores: GenC (₹4 LPA), GenC Elevate (₹5.5 LPA), and GenC Pro (₹9 LPA). The Pro track is highly competitive and requires strong DSA skills. Apply through the official Cognizant careers portal or your college TPO.</p>
+    <p style="margin:0 0 14px;font-size:0.9rem;opacity:0.85;">Cognizant runs three tracks: GenC (₹4 LPA), GenC Next (₹5.5–7 LPA), and GenC Elevate (₹7–8 LPA for AI/ML specialists). The Elevate track is highly competitive and requires strong DSA + AI fundamentals. Apply through the official Cognizant careers portal or your college TPO.</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap;">
       <a href="https://careers.cognizant.com/global/en/cognizant-fresher-jobs-india" target="_blank" rel="noopener noreferrer" style="padding:8px 18px;background:#3b82f6;color:#fff;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">🌐 Apply at Cognizant</a>
       <a href="https://www.linkedin.com/jobs/search/?company=Cognizant&location=India&keywords=Fresher" target="_blank" rel="noopener noreferrer" style="padding:8px 18px;background:#0077b5;color:#fff;border-radius:20px;font-size:0.82rem;font-weight:600;text-decoration:none;">💼 LinkedIn</a>
@@ -270,7 +270,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
       </tr>
       <tr style="border-bottom:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
         <td style="padding:10px 14px;font-weight:600;">Cognizant</td>
-        <td style="padding:10px 14px;">GenC / Pro</td>
+        <td style="padding:10px 14px;">GenC / Elevate</td>
         <td style="padding:10px 14px;">60%</td>
         <td style="padding:10px 14px;">2024, 2025</td>
         <td style="padding:10px 14px;color:#34d399;font-weight:700;">₹4 – 9 LPA</td>
