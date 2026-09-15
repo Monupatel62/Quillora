@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
 import { Navbar } from "@/components/layout/Navbar";
@@ -225,6 +226,9 @@ gtag('config', '${GA_ID}', { page_path: window.location.pathname });`}
           </main>
           <Footer />
         </ThemeProvider>
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );
