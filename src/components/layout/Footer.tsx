@@ -83,9 +83,11 @@ export function Footer() {
             <ul className="space-y-2.5">
               {[
                 { label: "All Articles", href: "/blog" },
-                { label: "Featured", href: "/blog?featured=true" },
+                { label: "IT Jobs India 2026", href: "/blog/category/jobs" },
+                { label: "Fresher IT Jobs", href: "/blog/fresher-it-jobs-india-2026" },
+                { label: "TCS Jobs 2026", href: "/blog/tcs-jobs-freshers-salary-2026" },
+                { label: "Infosys Jobs 2026", href: "/blog/infosys-jobs-freshers-salary-2026" },
                 { label: "Technology", href: "/blog/category/technology" },
-                { label: "Design", href: "/blog/category/design" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

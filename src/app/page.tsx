@@ -215,6 +215,117 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-5 py-12 pb-20">
         <Newsletter />
       </section>
+
+      {/* ── INDIA IT JOBS — Internal linking hub ──────────
+          Critical for Google crawl: direct links to all job
+          posts from homepage boosts crawl budget allocation
+      ──────────────────────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-5 pb-20" aria-labelledby="jobs-hub-heading">
+        <div className="border border-[var(--border)] rounded-3xl p-8 bg-[var(--surface)]">
+          <div className="mb-6">
+            <p className="text-xs font-bold uppercase tracking-widest text-[var(--accent2)] mb-2">💼 Job Resources</p>
+            <h2 id="jobs-hub-heading" className="font-serif font-bold text-2xl text-[var(--text)]">
+              India IT Jobs 2026
+            </h2>
+            <p className="text-sm text-[var(--text2)] mt-2">
+              Latest hiring guides — by city, company, role, and experience level.
+            </p>
+          </div>
+
+          {/* City Jobs */}
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[var(--text3)] mb-3">By City</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: "Bangalore", slug: "it-jobs-bangalore-2026" },
+                { label: "Hyderabad", slug: "it-jobs-hyderabad-2026" },
+                { label: "Pune", slug: "it-jobs-pune-2026" },
+                { label: "Mumbai", slug: "it-jobs-mumbai-2026" },
+                { label: "Chennai", slug: "it-jobs-chennai-2026" },
+                { label: "Noida & NCR", slug: "it-jobs-noida-delhi-ncr-2026" },
+              ].map((city) => (
+                <Link
+                  key={city.slug}
+                  href={`/blog/${city.slug}`}
+                  className="px-3 py-1.5 text-xs font-semibold rounded-full bg-[var(--surface2)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200"
+                >
+                  {city.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Company Jobs */}
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[var(--text3)] mb-3">By Company</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: "TCS", slug: "tcs-jobs-freshers-salary-2026" },
+                { label: "Infosys", slug: "infosys-jobs-freshers-salary-2026" },
+                { label: "Wipro", slug: "wipro-jobs-freshers-salary-2026" },
+                { label: "HCLTech", slug: "hcltech-jobs-freshers-salary-2026" },
+                { label: "Cognizant", slug: "cognizant-jobs-freshers-salary-2026" },
+                { label: "Accenture", slug: "accenture-jobs-freshers-salary-2026" },
+                { label: "Capgemini", slug: "capgemini-jobs-freshers-salary-2026" },
+                { label: "Tech Mahindra", slug: "tech-mahindra-jobs-freshers-salary-2026" },
+              ].map((co) => (
+                <Link
+                  key={co.slug}
+                  href={`/blog/${co.slug}`}
+                  className="px-3 py-1.5 text-xs font-semibold rounded-full bg-[var(--surface2)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200"
+                >
+                  {co.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Role Jobs */}
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[var(--text3)] mb-3">By Role</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: "Software Engineer", slug: "software-engineer-jobs-india-2026" },
+                { label: "AI / ML Engineer", slug: "ai-ml-engineer-jobs-india-2026" },
+                { label: "Data Scientist", slug: "data-scientist-jobs-india-2026" },
+                { label: "Full Stack Developer", slug: "full-stack-developer-jobs-india-2026" },
+                { label: "Cloud Engineer", slug: "cloud-engineer-jobs-india-2026" },
+                { label: "DevOps Engineer", slug: "devops-engineer-jobs-india-2026" },
+                { label: "Cybersecurity", slug: "cybersecurity-jobs-india-2026" },
+                { label: "Business Analyst", slug: "business-analyst-jobs-india-2026" },
+              ].map((role) => (
+                <Link
+                  key={role.slug}
+                  href={`/blog/${role.slug}`}
+                  className="px-3 py-1.5 text-xs font-semibold rounded-full bg-[var(--surface2)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200"
+                >
+                  {role.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Experience */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[var(--text3)] mb-3">By Experience</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { label: "Fresher Jobs (TCS NQT, InfyTQ, NLTH)", slug: "fresher-it-jobs-india-2026" },
+                { label: "2–5 Years Lateral Hiring", slug: "2-5-years-experience-it-jobs-india-2026" },
+                { label: "Senior 7+ Years (20–80 LPA)", slug: "senior-it-jobs-india-2026-7-plus-years" },
+              ].map((exp) => (
+                <Link
+                  key={exp.slug}
+                  href={`/blog/${exp.slug}`}
+                  className="px-3 py-1.5 text-xs font-semibold rounded-full bg-[var(--surface2)] border border-[var(--border)] text-[var(--text2)] hover:border-[var(--accent)] hover:text-[var(--accent2)] transition-all duration-200"
+                >
+                  {exp.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
