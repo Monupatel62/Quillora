@@ -7,7 +7,7 @@ export const ROLE_POSTS: BlogPost[] = [
   {
     id: 24,
     slug: "software-engineer-jobs-india-2026",
-    title: "Software Engineer Jobs in India 2026 — Salary, Skills & Top Companies",
+    title: "Software Engineer Jobs India 2026 — Salary & Skills",
     excerpt:
       "Software engineering remains India's largest IT employment category with 5.4 million professionals. Discover 2026 salary bands by experience, must-have skills, and the top companies actively hiring across Bangalore, Hyderabad, Pune, and remote.",
     category: "Jobs",
@@ -176,14 +176,14 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Mass-apply via Naukri for volume but also cold-reach hiring managers on LinkedIn for product companies. A personalised note converts 3× better.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/full-stack-developer-jobs-india-2026">Full Stack Developer Jobs India 2026 — Salary</a></li><li><a href="/blog/data-scientist-jobs-india-2026">Data Scientist Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 2. DATA SCIENTIST ────────────────────────────────────
   {
     id: 25,
     slug: "data-scientist-jobs-india-2026",
-    title: "Data Scientist Jobs in India 2026 — Salary, Skills & How to Get Hired",
+    title: "Data Scientist Jobs India 2026 — Salary & Skills",
     excerpt:
       "Data science hiring in India surged 28% in 2026. From fintech giants to e-commerce unicorns, every major company is scaling its data team. Discover salary ranges, must-have skills, and a step-by-step guide to getting hired.",
     category: "Jobs",
@@ -350,7 +350,7 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Companies want data scientists who can take a model to production. Learn Flask/FastAPI and basic MLOps to stand out.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/ai-ml-engineer-jobs-india-2026">AI ML Engineer Jobs in India 2026 — Most In-Demand Tech Role</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 3. AI / ML ENGINEER ──────────────────────────────────
@@ -525,14 +525,14 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Startups like Sarvam, Krutrim, and Ola Krutrim offer equity + learning velocity that large companies simply cannot match.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/full-stack-developer-jobs-india-2026">Full Stack Developer Jobs India 2026 — Salary</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 4. FULL STACK DEVELOPER ──────────────────────────────
   {
     id: 27,
     slug: "full-stack-developer-jobs-india-2026",
-    title: "Full Stack Developer Jobs India 2026 — React, Node, Java Roles",
+    title: "Full Stack Developer Jobs India 2026 — Salary",
     excerpt:
       "Full stack developers are among the most hired profiles in India's startup and product ecosystem. Discover 2026 salaries for React, Node.js, Java, and Python stacks, top companies, and what it takes to stand out.",
     category: "Jobs",
@@ -696,14 +696,14 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Product companies assess system design from 3+ years experience. Cover databases, caching, and API design patterns.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/cloud-engineer-jobs-india-2026">Cloud Engineer Jobs India 2026 — AWS, Azure, GCP</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 5. CLOUD ENGINEER ────────────────────────────────────
   {
     id: 28,
     slug: "cloud-engineer-jobs-india-2026",
-    title: "Cloud Engineer Jobs India 2026 — AWS, Azure, GCP Roles & Salary",
+    title: "Cloud Engineer Jobs India 2026 — AWS, Azure, GCP",
     excerpt:
       "Cloud engineering is one of the highest-paying IT specialisations in India. With enterprises migrating workloads at scale, AWS, Azure, and GCP-certified professionals are in heavy demand. Find 2026 salaries, certifications, and top hiring companies.",
     category: "Jobs",
@@ -871,7 +871,7 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Firms like Searce, Quantiphi, and TechM Cloud give hands-on multi-cloud exposure and sponsor certifications within a year.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/cybersecurity-jobs-india-2026">Cybersecurity Jobs in India 2026 — Fastest Growing IT Career</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 6. CYBERSECURITY ────────────────────────────────────
@@ -1045,7 +1045,7 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">AWS/Azure security specialists earn 30–40% more than general security analysts. The AWS Security Specialty cert is worth every rupee.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/devops-engineer-jobs-india-2026">DevOps Engineer Jobs India 2026 — Salary, Tools & Companies</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 7. DEVOPS ENGINEER ──────────────────────────────────
@@ -1216,14 +1216,14 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Prometheus, Grafana, and OpenTelemetry experience is now expected at the 3+ year level. Spend a weekend setting up a full stack.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/business-analyst-jobs-india-2026">Business Analyst Jobs India 2026 — Roles & Salary</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
   // ── 8. BUSINESS ANALYST ─────────────────────────────────
   {
     id: 31,
     slug: "business-analyst-jobs-india-2026",
-    title: "Business Analyst Jobs in India 2026 — IT Sector Openings & Salary",
+    title: "Business Analyst Jobs India 2026 — Roles & Salary",
     excerpt:
       "Business Analysts bridge the gap between technology and business in India's IT sector. With 16% job growth in 2026, BA roles are abundant across IT services, BFSI, and product companies. Discover salary ranges, key skills, and top employers.",
     category: "Jobs",
@@ -1390,7 +1390,7 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Product BA / Product Owner roles at SaaS companies pay 2× IT services and offer a faster path to product management career tracks.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
   },
 
 ];

@@ -21,12 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.95,
     },
-    {
-      url: `${base}/blog/category/jobs`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
   ];
 
   /* ── Category pages ────────────────────────────────────── */

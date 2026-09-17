@@ -268,14 +268,14 @@ export const CITY_POSTS: BlogPost[] = [
   <li>Whitefield and Manyata commute is heavy — factor this into your job choice</li>
   <li>Networking events at NASSCOM, TiE Bangalore, and local meetups regularly surface hidden roles</li>
 </ul>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-hyderabad-2026">IT Jobs in Hyderabad 2026 — AI Hiring Hub Guide</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
   // ── 2. HYDERABAD ─────────────────────────────────────────
   {
     id: 11,
     slug: "it-jobs-hyderabad-2026",
-    title: "IT Jobs in Hyderabad 2026 — India's Fastest Growing AI Hiring Hub",
+    title: "IT Jobs in Hyderabad 2026 — AI Hiring Hub Guide",
     excerpt:
       "Hyderabad recorded the highest AI/ML hiring growth in India at 48% YoY in 2026. HITEC City is home to Microsoft, Google, Amazon, and over 1,500 IT companies. Here's the complete jobs guide.",
     category: "Jobs",
@@ -444,14 +444,14 @@ export const CITY_POSTS: BlogPost[] = [
   <li><a href="https://in.indeed.com/jobs?q=software+engineer&l=Hyderabad" target="_blank" rel="noopener noreferrer"><strong>Indeed — Software Jobs Hyderabad</strong></a></li>
   <li>Direct company portals (Microsoft, Amazon, Infosys linked above)</li>
 </ul>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-pune-2026">IT Jobs in Pune 2026 — Companies & Salaries</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
   // ── 3. PUNE ──────────────────────────────────────────────
   {
     id: 12,
     slug: "it-jobs-pune-2026",
-    title: "IT Jobs in Pune 2026 — Top Tech Companies, Salaries & Hiring Guide",
+    title: "IT Jobs in Pune 2026 — Companies & Salaries",
     excerpt:
       "Pune's IT sector grew 13% YoY in 2026 with 1,000+ tech companies in Hinjewadi, Baner, and Kharadi. Here are the top companies hiring, roles in demand, and how to apply.",
     category: "Jobs",
@@ -584,14 +584,14 @@ export const CITY_POSTS: BlogPost[] = [
 </ul>
 
 <blockquote><p>Pune's IT hiring grew 13% YoY in 2026 and AI/ML roles grew 31% — same as Bangalore. The city's lower cost of living compared to Bangalore makes it increasingly attractive for both employers and candidates. — BusinessWorld, 2026</p></blockquote>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-mumbai-2026">IT Jobs in Mumbai 2026 — MNC & Fintech Hiring</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
   // ── 4. MUMBAI ────────────────────────────────────────────
   {
     id: 13,
     slug: "it-jobs-mumbai-2026",
-    title: "IT Jobs in Mumbai 2026 — Finance Tech, MNC & IT Sector Hiring Guide",
+    title: "IT Jobs in Mumbai 2026 — MNC & Fintech Hiring",
     excerpt:
       "Mumbai's AI/ML hiring grew 36% YoY in 2026 — second only to Hyderabad. India's financial capital is also a major IT hub with BKC, Powai, and Airoli as the top tech zones.",
     category: "Jobs",
@@ -719,14 +719,14 @@ export const CITY_POSTS: BlogPost[] = [
   <li><a href="https://www.linkedin.com/jobs/fintech-jobs-mumbai/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn — Fintech Jobs Mumbai</strong></a></li>
   <li><a href="https://in.indeed.com/jobs?q=software+engineer&l=Mumbai" target="_blank" rel="noopener noreferrer"><strong>Indeed — Software Jobs Mumbai</strong></a></li>
 </ul>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-chennai-2026">IT Jobs in Chennai 2026 — Companies & Salaries</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
   // ── 5. CHENNAI ───────────────────────────────────────────
   {
     id: 14,
     slug: "it-jobs-chennai-2026",
-    title: "IT Jobs in Chennai 2026 — Top Companies, Old Mahabalipuram Road & Salaries",
+    title: "IT Jobs in Chennai 2026 — Companies & Salaries",
     excerpt:
       "Chennai is Tamil Nadu's IT hub with 500+ companies along OMR. AI/ML hiring grew 31% YoY in 2026. Here are the top employers, roles, salaries, and how to apply.",
     category: "Jobs",
@@ -836,14 +836,14 @@ export const CITY_POSTS: BlogPost[] = [
 </ul>
 
 <blockquote><p>Chennai's IT sector posted 31% AI/ML hiring growth in 2026, and hiring in the 50+ LPA salary band surged 45% YoY — indicating strong senior talent demand. — Naukri JobSpeak 2026</p></blockquote>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-noida-delhi-ncr-2026">IT Jobs in Noida & Delhi NCR 2026 — Full Guide</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
   // ── 6. NOIDA / DELHI NCR ─────────────────────────────────
   {
     id: 15,
     slug: "it-jobs-noida-delhi-ncr-2026",
-    title: "IT Jobs in Noida & Delhi NCR 2026 — Complete Guide for Tech Professionals",
+    title: "IT Jobs in Noida & Delhi NCR 2026 — Full Guide",
     excerpt:
       "Delhi NCR — Noida, Gurgaon, and Greater Noida — is North India's largest IT hub with 2,500+ tech companies. Here's the complete 2026 hiring guide with top companies, roles, salaries.",
     category: "Jobs",
@@ -960,7 +960,7 @@ export const CITY_POSTS: BlogPost[] = [
   <li><a href="https://www.naukri.com/it-jobs-in-gurgaon" target="_blank" rel="noopener noreferrer"><strong>Naukri — IT Jobs Gurgaon</strong></a></li>
   <li><a href="https://www.linkedin.com/jobs/noida-software-jobs/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn — NCR Tech Jobs</strong></a></li>
 </ul>
-    `.trim(),
+    \n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`.trim(),
   },
 
 ];

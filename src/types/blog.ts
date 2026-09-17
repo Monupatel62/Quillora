@@ -4,13 +4,6 @@
 
 export type Category =
   | "Technology"
-  | "Design"
-  | "Culture"
-  | "Science"
-  | "Finance"
-  | "Health"
-  | "Travel"
-  | "Life"
   | "Jobs";
 
 export interface Author {
@@ -37,6 +30,8 @@ export interface BlogPost {
   featured: boolean;
   coverEmoji: string;
   coverGradient: string;
+  /** Optional cover image path for OG and featured display (e.g. "/images/post-cover.png") */
+  coverImage?: string;
   /** Absolute URL populated at runtime from SITE_URL */
   url?: string;
 }

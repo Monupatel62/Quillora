@@ -8,29 +8,24 @@ import { BlogListJsonLd } from "@/components/seo/JsonLd";
 /* ── SEO Metadata ─────────────────────────────────────────────
    Strategy:
    - Title: "All Articles" → keyword-rich + intent-matching
-   - Description: 155 chars, covers all 8 categories
+   - Description: covers the two categories — Technology & Jobs
    - Keywords: all category terms + blog-specific terms
    - Canonical: /blog (not homepage)
    ──────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "All Articles — Technology, Design, Science, Finance & More",
+  title: "All Articles — Technology & Latest IT Jobs in India",
   description:
-    "Browse every article on Quillora. In-depth writing on technology, UI design, science, personal finance, health, travel, culture, and life philosophy.",
+    "Browse every article on Quillora — in-depth technology writing plus the latest IT job openings in India by city, company, role, and experience level.",
   keywords: [
     "technology articles",
-    "design blog posts",
-    "science articles",
-    "personal finance blog",
-    "health articles",
-    "travel writing",
-    "culture blog",
-    "life philosophy articles",
     "AI blog",
-    "UX design articles",
-    "habit science",
-    "financial independence",
+    "software development blog",
+    "tech trends 2026",
+    "IT jobs India 2026",
+    "software jobs India",
+    "tech jobs India",
+    "fresher IT jobs India",
     "blog articles",
-    "long form articles",
   ],
   alternates: {
     canonical: `${siteConfig.url}/blog`,

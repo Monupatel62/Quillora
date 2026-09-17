@@ -41,6 +41,9 @@ export async function generateMetadata({
 
   const url = postUrl(slug);
 
+  /* Per-post social share image (generated at build in /public/og). */
+  const ogImage = `${siteConfig.url}/og/${slug}.png`;
+
   /* Title: 55–60 chars ideal — primary keyword | brand */
   const metaTitle = `${post.title} | ${siteConfig.name}`;
 
@@ -81,7 +84,7 @@ export async function generateMetadata({
       tags: post.tags,
       images: [
         {
-          url: `${siteConfig.url}/og-default.png`,
+          url: ogImage,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -96,7 +99,7 @@ export async function generateMetadata({
       creator: post.author.twitter ?? siteConfig.twitterHandle,
       title: metaTitle,
       description: metaDesc,
-      images: [`${siteConfig.url}/og-default.png`],
+      images: [ogImage],
     },
   };
 }

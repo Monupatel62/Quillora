@@ -7,7 +7,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
   {
     id: 32,
     slug: "fresher-it-jobs-india-2026",
-    title: "Fresher IT Jobs India 2026 — TCS NQT, Infosys InfyTQ, Wipro NLTH & More",
+    title: "Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH",
     excerpt:
       "Graduating in 2026? India's top IT companies are hiring freshers at scale. This complete guide covers TCS NQT, Infosys InfyTQ, Wipro NLTH, Cognizant GenC, HCLTech AMP, and Accenture ASE — with apply links, eligibility criteria, salaries, and tips to crack every campus drive.",
     category: "Jobs",
@@ -320,14 +320,14 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
   <a href="https://internshala.com/jobs/it-software-jobs" target="_blank" rel="noopener noreferrer" style="padding:10px 20px;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;border-radius:25px;font-size:0.85rem;font-weight:600;text-decoration:none;">🎓 Internshala</a>
   <a href="https://in.indeed.com/q-fresher-IT-jobs.html" target="_blank" rel="noopener noreferrer" style="padding:10px 20px;background:linear-gradient(135deg,#003a9b,#0052cc);color:#fff;border-radius:25px;font-size:0.85rem;font-weight:600;text-decoration:none;">🌐 Indeed India</a>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/2-5-years-experience-it-jobs-india-2026">IT Jobs for 2–5 Years Experience India 2026</a></li><li><a href="/blog/senior-it-jobs-india-2026-7-plus-years">Senior IT Jobs India 2026 — 7+ Yrs, 20–80 LPA</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`,
   },
 
   // ── 2. 2–5 YEARS EXPERIENCE ─────────────────────────────
   {
     id: 33,
     slug: "2-5-years-experience-it-jobs-india-2026",
-    title: "IT Jobs for 2–5 Years Experience India 2026 — Lateral Hiring Guide",
+    title: "IT Jobs for 2–5 Years Experience India 2026",
     excerpt:
       "The 2–5 year experience band is the most actively hired segment in India's IT lateral market. Companies are competing fiercely for mid-level professionals. This guide covers resume optimisation, skill upgrades, salary negotiation, and which companies are hiring hardest right now.",
     category: "Jobs",
@@ -467,14 +467,14 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
   <a href="https://in.indeed.com/q-software-engineer-2-years-experience-jobs.html" target="_blank" rel="noopener noreferrer" style="padding:10px 20px;background:linear-gradient(135deg,#003a9b,#0052cc);color:#fff;border-radius:25px;font-size:0.85rem;font-weight:600;text-decoration:none;">🌐 Indeed India</a>
   <a href="https://www.instahyre.com/" target="_blank" rel="noopener noreferrer" style="padding:10px 20px;background:linear-gradient(135deg,#0f766e,#0d9488);color:#fff;border-radius:25px;font-size:0.85rem;font-weight:600;text-decoration:none;">⚡ Instahyre</a>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/senior-it-jobs-india-2026-7-plus-years">Senior IT Jobs India 2026 — 7+ Yrs, 20–80 LPA</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`,
   },
 
   // ── 3. SENIOR IT JOBS (7+ YEARS) ────────────────────────
   {
     id: 34,
     slug: "senior-it-jobs-india-2026-7-plus-years",
-    title: "Senior IT Jobs India 2026 — 7+ Years Experience, 20–80 LPA Roles",
+    title: "Senior IT Jobs India 2026 — 7+ Yrs, 20–80 LPA",
     excerpt:
       "Senior IT professionals with 7+ years are navigating a specialised, high-value job market. This guide covers Architect, Lead, and Manager roles, premium job boards like Hirist and iimjobs, executive search firms, and how to position yourself for 20–80 LPA packages in 2026.",
     category: "Jobs",
@@ -681,7 +681,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Verbal offers are not offers. At senior levels, hiring timelines are 45–90 days. Keep your job security while the process runs, and only resign after you have signed documentation.</p>
   </div>
 </div>
-`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/2-5-years-experience-it-jobs-india-2026">IT Jobs for 2–5 Years Experience India 2026</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`,
   },
 
 ];

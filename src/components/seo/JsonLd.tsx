@@ -27,12 +27,6 @@ export function WebsiteJsonLd() {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteConfig.url}/logo.png`,
-        width: 512,
-        height: 512,
-      },
     },
   };
 
@@ -54,6 +48,7 @@ export function ArticleJsonLd({ post }: { post: BlogPost }) {
     headline: post.title,
     description: post.excerpt,
     url: postUrl,
+    image: [`${siteConfig.url}/og/${post.slug}.png`],
     datePublished: post.publishedAt,
     dateModified: post.updatedAt ?? post.publishedAt,
     inLanguage: "en-US",
@@ -73,12 +68,6 @@ export function ArticleJsonLd({ post }: { post: BlogPost }) {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteConfig.url}/logo.png`,
-        width: 512,
-        height: 512,
-      },
     },
 
     mainEntityOfPage: {

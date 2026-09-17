@@ -15,23 +15,20 @@ import { Newsletter } from "@/components/ui/Newsletter";
    - OG/Twitter: full social sharing optimization
    ──────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "Quillora — Thoughtful Articles on Technology, Design & Culture",
+  title: "Quillora — Technology Articles & Latest IT Jobs in India",
   description:
-    "Quillora publishes in-depth articles on technology, UI design, science, personal finance, health, travel, and life philosophy. Ideas worth reading, every week.",
+    "Quillora publishes in-depth technology articles and the latest IT job openings in India — by city, company, role, and experience. Ideas and opportunities worth reading.",
   keywords: [
     "technology blog",
-    "design articles",
-    "science blog",
-    "personal finance tips",
-    "health and wellness",
-    "travel blog",
-    "life philosophy",
     "AI articles",
-    "UX design blog",
-    "long form reading",
+    "software development blog",
+    "tech trends 2026",
+    "IT jobs India 2026",
+    "software jobs India",
+    "tech jobs India",
+    "fresher IT jobs India",
+    "IT job vacancies India",
     "quillora",
-    "ideas blog",
-    "culture articles",
   ],
   alternates: {
     canonical: siteConfig.url,
@@ -43,9 +40,9 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Quillora — Thoughtful Articles on Technology, Design & Culture",
+    title: "Quillora — Technology Articles & Latest IT Jobs in India",
     description:
-      "In-depth articles on technology, design, science, finance, health, travel, and life. No noise — just ideas worth reading.",
+      "In-depth technology articles and the latest IT jobs in India. No noise — just ideas and opportunities worth reading.",
     images: [
       {
         url: `${siteConfig.url}/og-default.png`,
@@ -58,9 +55,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: siteConfig.twitterHandle,
-    title: "Quillora — Thoughtful Articles on Technology, Design & Culture",
+    title: "Quillora — Technology Articles & Latest IT Jobs in India",
     description:
-      "In-depth articles on technology, design, science, finance, health, travel, and life.",
+      "In-depth technology articles and the latest IT jobs in India.",
     images: [`${siteConfig.url}/og-default.png`],
   },
 };

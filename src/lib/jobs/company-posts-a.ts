@@ -6,7 +6,7 @@ export const COMPANY_POSTS_A: BlogPost[] = [
   {
     id: 16,
     slug: "tcs-jobs-freshers-salary-2026",
-    title: "TCS Jobs 2026: Fresher Roles, NQT Salary & How to Get Hired at Tata Consultancy Services",
+    title: "TCS Jobs 2026: Fresher Roles, NQT Salary & Apply",
     excerpt:
       "Complete guide to TCS recruitment 2026 — NQT, Digital, and Prime tracks, salary bands ₹3.36L–₹12L, top Indian hiring cities, and direct apply links.",
     category: "Jobs",
@@ -192,14 +192,14 @@ Tata Consultancy Services (TCS) is India's largest IT employer and the world's s
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/infosys-jobs-freshers-salary-2026">Infosys Jobs 2026: Fresher Salary & InfyTQ Guide</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── Infosys ────────────────────────────────────────────────────────────────
   {
     id: 17,
     slug: "infosys-jobs-freshers-salary-2026",
-    title: "Infosys Jobs 2026: Fresher Packages, InfyTQ, SP Track & Complete Hiring Guide",
+    title: "Infosys Jobs 2026: Fresher Salary & InfyTQ Guide",
     excerpt:
       "Everything you need to know about Infosys hiring 2026 — SE vs SP tracks, ₹3.6L–₹8L fresher packages, InfyTQ certification, and how to apply step by step.",
     category: "Jobs",
@@ -381,14 +381,14 @@ Infosys is India's second-largest IT services company with over <strong>320,000 
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/wipro-jobs-freshers-salary-2026">Wipro Jobs 2026: NLTH, Salary & How to Apply</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── Wipro ──────────────────────────────────────────────────────────────────
   {
     id: 18,
     slug: "wipro-jobs-freshers-salary-2026",
-    title: "Wipro Jobs 2026: NLTH, Elite Track, Salary Guide & How to Apply for Fresher Roles",
+    title: "Wipro Jobs 2026: NLTH, Salary & How to Apply",
     excerpt:
       "Full Wipro hiring guide for 2026 — NLTH vs Elite tracks, fresher salaries from ₹3.5L to ₹8L, WILP program details, and direct links to apply today.",
     category: "Jobs",
@@ -569,14 +569,14 @@ Wipro Limited is one of India's "Big Four" IT companies, employing over <strong>
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/hcltech-jobs-freshers-salary-2026">HCLTech Jobs 2026: Fresher Salary & Hiring Guide</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── HCLTech ────────────────────────────────────────────────────────────────
   {
     id: 19,
     slug: "hcltech-jobs-freshers-salary-2026",
-    title: "HCLTech Jobs 2026: Fresher Salary ₹3.5–4.5L, Campus Hiring & Complete Apply Guide",
+    title: "HCLTech Jobs 2026: Fresher Salary & Hiring Guide",
     excerpt:
       "Detailed HCLTech hiring guide for 2026 — campus programs, fresher CTC ₹3.5–4.5L, lateral salaries up to ₹50L, Indian office locations, and direct apply links.",
     category: "Jobs",
@@ -761,6 +761,6 @@ HCLTech (formerly HCL Technologies) is India's third-largest IT services company
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/cognizant-jobs-freshers-salary-2026">Cognizant Jobs 2026: GenC Salary & Hiring Guide</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 ];

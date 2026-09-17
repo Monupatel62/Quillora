@@ -6,7 +6,7 @@ export const COMPANY_POSTS_B: BlogPost[] = [
   {
     id: 20,
     slug: "cognizant-jobs-freshers-salary-2026",
-    title: "Cognizant Jobs 2026: GenC, GenC Next Salary Guide & How to Get Hired as a Fresher",
+    title: "Cognizant Jobs 2026: GenC Salary & Hiring Guide",
     excerpt:
       "Complete Cognizant hiring guide for 2026 — GenC vs GenC Next tracks, fresher packages ₹4L–₹7L, interview process, top locations, and direct apply links.",
     category: "Jobs",
@@ -191,14 +191,14 @@ Cognizant Technology Solutions is one of the world's leading IT professional ser
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/accenture-jobs-freshers-salary-2026">Accenture Jobs 2026: ASE Roles & Fresher Package</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── Accenture ──────────────────────────────────────────────────────────────
   {
     id: 21,
     slug: "accenture-jobs-freshers-salary-2026",
-    title: "Accenture Jobs 2026: ASE Roles, Fresher Package ₹3.5–4.5L & Complete Hiring Roadmap",
+    title: "Accenture Jobs 2026: ASE Roles & Fresher Package",
     excerpt:
       "Your full guide to Accenture India hiring 2026 — ASE program details, entry salaries ₹3.5L–₹4.5L, lateral bands up to ₹50L, interview tips, and how to apply.",
     category: "Jobs",
@@ -380,14 +380,14 @@ Accenture is a global professional services powerhouse with over <strong>750,000
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/capgemini-jobs-freshers-salary-2026">Capgemini Jobs 2026: Fresher Package & GAME Guide</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── Capgemini ──────────────────────────────────────────────────────────────
   {
     id: 22,
     slug: "capgemini-jobs-freshers-salary-2026",
-    title: "Capgemini Jobs 2026: Fresher Package ₹4–5L, GAME Program & Full India Hiring Guide",
+    title: "Capgemini Jobs 2026: Fresher Package & GAME Guide",
     excerpt:
       "Everything about Capgemini India hiring in 2026 — GAME aptitude test, fresher CTC ₹4–5L, lateral packages up to ₹45L, top cities, and step-by-step apply guide.",
     category: "Jobs",
@@ -568,14 +568,14 @@ Capgemini is a French multinational IT services and consulting company with over
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/tech-mahindra-jobs-freshers-salary-2026">Tech Mahindra Jobs 2026: Fresher Salary & Hiring</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 
   // ─── Tech Mahindra ──────────────────────────────────────────────────────────
   {
     id: 23,
     slug: "tech-mahindra-jobs-freshers-salary-2026",
-    title: "Tech Mahindra Jobs 2026: Fresher Salary ₹3.25–4L, SmartAcademy & Complete Hiring Guide",
+    title: "Tech Mahindra Jobs 2026: Fresher Salary & Hiring",
     excerpt:
       "Full Tech Mahindra hiring guide for 2026 — fresher packages ₹3.25–4L, SmartAcademy program, lateral CTC up to ₹40L, key locations, and direct links to apply now.",
     category: "Jobs",
@@ -757,6 +757,6 @@ Tech Mahindra is part of the Mahindra Group and ranks among India's top five IT 
   </ul>
 </div>
 
-</article>`,
+</article>\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/tcs-jobs-freshers-salary-2026">TCS Jobs 2026: Fresher Roles, NQT Salary & Apply</a></li><li><a href="/blog/it-jobs-bangalore-2026">IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries</a></li></ul>`,
   },
 ];
