@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: "All Articles — Quillora",
     description:
-      "In-depth articles on technology, design, science, personal finance, health, travel, and culture. Browse every post on Quillora.",
+      "In-depth technology articles and the latest IT jobs in India. Browse every post on Quillora.",
     images: [
       {
         url: `${siteConfig.url}/og-default.png`,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     site: siteConfig.twitterHandle,
     title: "All Articles — Quillora",
     description:
-      "In-depth articles on technology, design, science, personal finance, health, travel, and culture.",
+      "In-depth technology articles and the latest IT jobs in India.",
     images: [`${siteConfig.url}/og-default.png`],
   },
 };
@@ -74,8 +74,8 @@ export default function BlogPage() {
             Every post, one place.
           </h1>
           <p className="text-[var(--text2)] max-w-xl mx-auto leading-relaxed">
-            {allPosts.length} in-depth articles across technology, design, science, finance,
-            health, travel, culture, and life. Filter by topic or search below.
+            {allPosts.length} in-depth articles across technology and IT jobs in India.
+            Filter by topic or search below.
           </p>
         </header>
 

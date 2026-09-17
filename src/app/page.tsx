@@ -100,7 +100,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg text-[var(--text2)] leading-relaxed max-w-lg mb-10 animate-fade-up delay-200">
-              In-depth articles on technology, design, science, finance, health, and culture.
+              In-depth articles on technology and the latest IT jobs in India.
               Written for curious minds who want more than headlines.
             </p>
 
