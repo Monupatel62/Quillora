@@ -35,6 +35,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     content: `
 <p class="lead">Bangalore is one of India's strongest hubs for <strong>software engineer</strong> roles in 2026, with active hiring concentrated across Whitefield, Electronic City, Outer Ring Road. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring software engineers in Bangalore right now — plus exactly how to apply.</p>
 
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> As of September 2026, job platforms list <strong>11,000+ software engineering roles</strong> in Bangalore, with advertised salaries ranging roughly &#8377;7.8L&ndash;&#8377;18.7L per year (Indeed) &mdash; the deepest talent market in India for this role.</p>
+
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 Software Engineer — Bangalore Snapshot (2026)</h3>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
@@ -160,6 +162,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     coverGradient: "from-emerald-600 to-teal-700",
     content: `
 <p class="lead">Bangalore is one of India's strongest hubs for <strong>data scientist</strong> roles in 2026, with active hiring concentrated across Whitefield, Electronic City, Outer Ring Road. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring data scientists in Bangalore right now — plus exactly how to apply.</p>
+
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> Bangalore had <strong>1,500+ live data science openings</strong> in September 2026 (Indeed), and NASSCOM projects data science roles to grow <strong>36%</strong> through 2033, with the city at the centre of that surge.</p>
 
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 Data Scientist — Bangalore Snapshot (2026)</h3>
@@ -287,6 +291,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     content: `
 <p class="lead">Hyderabad is one of India's strongest hubs for <strong>ai/ml engineer</strong> roles in 2026, with active hiring concentrated across HITEC City, Gachibowli, Financial District. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring ai/ml engineers in Hyderabad right now — plus exactly how to apply.</p>
 
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> Hyderabad listed <strong>6,000+ machine-learning roles</strong> plus hundreds of dedicated AI and agentic-AI openings in September 2026 (Indeed), with employers like UnitedHealth Group and Accenture actively hiring AI/ML engineers.</p>
+
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 AI/ML Engineer — Hyderabad Snapshot (2026)</h3>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
@@ -412,6 +418,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     coverGradient: "from-cyan-600 to-blue-700",
     content: `
 <p class="lead">Pune is one of India's strongest hubs for <strong>full stack developer</strong> roles in 2026, with active hiring concentrated across Hinjewadi, Baner, Kharadi. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring full stack developers in Pune right now — plus exactly how to apply.</p>
+
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> Pune continues to post a steady stream of full-stack openings across its Hinjewadi and Kharadi tech corridors, driven by a dense startup and product-company ecosystem.</p>
 
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 Full Stack Developer — Pune Snapshot (2026)</h3>
@@ -539,6 +547,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     content: `
 <p class="lead">Mumbai is one of India's strongest hubs for <strong>cybersecurity engineer</strong> roles in 2026, with active hiring concentrated across BKC, Powai, Airoli. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring cybersecurity engineers in Mumbai right now — plus exactly how to apply.</p>
 
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> Mumbai listed <strong>300+ dedicated cybersecurity roles</strong> (plus thousands more AI-security postings) in September 2026 (Indeed), with KPMG, Wipro, and major BFSI firms hiring across VAPT, SOC, and security-architecture functions.</p>
+
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 Cybersecurity Engineer — Mumbai Snapshot (2026)</h3>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
@@ -664,6 +674,8 @@ export const CITY_ROLE_POSTS: BlogPost[] = [
     coverGradient: "from-orange-600 to-amber-700",
     content: `
 <p class="lead">Chennai is one of India's strongest hubs for <strong>devops engineer</strong> roles in 2026, with active hiring concentrated across OMR, Taramani, Guindy. This focused guide covers realistic salary bands, the skills employers screen for, and the companies hiring devops engineers in Chennai right now — plus exactly how to apply.</p>
+
+<p style="background:rgba(52,211,153,0.08);border-left:3px solid #34d399;padding:12px 16px;border-radius:8px;font-size:0.92rem;">📈 <strong>Live demand:</strong> DevOps demand stays strong across Chennai and the wider region, with employers such as L&amp;T, Accenture, and global remote-first firms hiring for Kubernetes, Terraform, and CI/CD expertise (Indeed, September 2026).</p>
 
 <div style="background:linear-gradient(135deg,#1e3a5f,#0f2440);border-radius:16px;padding:24px;margin:32px 0;color:#fff;">
   <h3 style="color:#60a5fa;margin:0 0 16px;font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;">📊 DevOps Engineer — Chennai Snapshot (2026)</h3>

@@ -227,3 +227,58 @@ export function CategoryJsonLd({
     />
   );
 }
+
+
+/* ── Author (ProfilePage) JSON-LD ───────────────────────── */
+export function AuthorJsonLd({
+  name,
+  slug,
+  bio,
+  role,
+  postCount,
+}: {
+  name: string;
+  slug: string;
+  bio: string;
+  role: string;
+  postCount: number;
+}) {
+  const url = `${siteConfig.url}/author/${slug}`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    dateModified: new Date().toISOString(),
+    mainEntity: {
+      "@type": "Person",
+      name,
+      description: bio,
+      jobTitle: role,
+      url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        { "@type": "ListItem", position: 2, name: "Authors", item: `${siteConfig.url}/blog` },
+        { "@type": "ListItem", position: 3, name, item: url },
+      ],
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

@@ -1,7 +1,8 @@
-import type { BlogPost, Category } from "@/types/blog";
+import type { BlogPost, Category, Author } from "@/types/blog";
 import { AUTHORS } from "./authors";
 import { siteConfig } from "./config";
 import { ALL_JOB_POSTS } from "./jobs/index";
+import { NEWS_POSTS } from "./news-posts";
 
 // ============================================================
 //  QUILLORA — BLOG POST DATA
@@ -291,7 +292,7 @@ const RAW_POSTS: BlogPost[] = [
 ];
 
 // Combine core posts + all 25 India IT job posts
-const ALL_POSTS: BlogPost[] = [...RAW_POSTS, ...ALL_JOB_POSTS];
+const ALL_POSTS: BlogPost[] = [...RAW_POSTS, ...ALL_JOB_POSTS, ...NEWS_POSTS];
 
 // ============================================================
 //  DATA ACCESS FUNCTIONS
@@ -348,4 +349,18 @@ export function formatDate(iso: string): string {
     month: "long",
     day: "numeric",
   });
+}
+
+
+/* ── Author helpers ─────────────────────────────────────── */
+export function getAuthorBySlug(slug: string): Author | undefined {
+  return Object.values(AUTHORS).find((a) => a.slug === slug);
+}
+
+export function getPostsByAuthor(authorSlug: string): BlogPost[] {
+  return getAllPosts().filter((p) => p.author.slug === authorSlug);
+}
+
+export function getAllAuthorSlugs(): string[] {
+  return Object.values(AUTHORS).map((a) => a.slug);
 }
