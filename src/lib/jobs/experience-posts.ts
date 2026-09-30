@@ -9,7 +9,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     slug: "fresher-it-jobs-india-2026",
     title: "Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH",
     excerpt:
-      "Graduating in 2026? India's top IT companies are hiring freshers at scale. This complete guide covers TCS NQT, Infosys InfyTQ, Wipro NLTH, Cognizant GenC, HCLTech AMP, and Accenture ASE — with apply links, eligibility criteria, salaries, and tips to crack every campus drive.",
+      "Graduating in 2026? Guide to TCS NQT, Infosys InfyTQ, Wipro NLTH, Cognizant GenC, HCLTech AMP, and Accenture ASE — with apply links and eligibility.",
     category: "Jobs",
     tags: [
       "fresher IT jobs India 2026",
@@ -329,7 +329,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     slug: "2-5-years-experience-it-jobs-india-2026",
     title: "IT Jobs for 2–5 Years Experience India 2026",
     excerpt:
-      "The 2–5 year experience band is the most actively hired segment in India's IT lateral market. Companies are competing fiercely for mid-level professionals. This guide covers resume optimisation, skill upgrades, salary negotiation, and which companies are hiring hardest right now.",
+      "The 2–5 year band is India's most actively hired IT segment. Covering resume tips, skill upgrades, salary negotiation, and who's hiring hardest now.",
     category: "Jobs",
     tags: [
       "IT jobs 2-5 years experience India 2026",
@@ -476,7 +476,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     slug: "senior-it-jobs-india-2026-7-plus-years",
     title: "Senior IT Jobs India 2026 — 7+ Yrs, 20–80 LPA",
     excerpt:
-      "Senior IT professionals with 7+ years are navigating a specialised, high-value job market. This guide covers Architect, Lead, and Manager roles, premium job boards like Hirist and iimjobs, executive search firms, and how to position yourself for 20–80 LPA packages in 2026.",
+      "For 7+ years IT pros: Architect, Lead, and Manager roles, premium boards like Hirist and iimjobs, and how to position for 20–80 LPA in 2026.",
     category: "Jobs",
     tags: [
       "senior IT jobs India 2026",

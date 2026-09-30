@@ -8,6 +8,7 @@ import { COMPANY_POSTS_A } from "./company-posts-a";
 import { COMPANY_POSTS_B } from "./company-posts-b";
 import { ROLE_POSTS } from "./role-posts";
 import { EXPERIENCE_POSTS } from "./experience-posts";
+import { CITY_ROLE_POSTS } from "./city-role-posts";
 
 export const ALL_JOB_POSTS = [
   ...CITY_POSTS,
@@ -15,4 +16,5 @@ export const ALL_JOB_POSTS = [
   ...COMPANY_POSTS_B,
   ...ROLE_POSTS,
   ...EXPERIENCE_POSTS,
+  ...CITY_ROLE_POSTS,
 ];

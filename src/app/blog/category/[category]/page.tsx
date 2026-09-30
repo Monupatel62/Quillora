@@ -57,7 +57,7 @@ export async function generateMetadata({
       description: metaDesc,
       images: [
         {
-          url: `${siteConfig.url}/og-default.png`,
+          url: `${siteConfig.url}/og/${cat.slug}.png`,
           width: 1200,
           height: 630,
           alt: `${cat.name} Articles — ${siteConfig.name}`,
@@ -69,7 +69,7 @@ export async function generateMetadata({
       site: siteConfig.twitterHandle,
       title: metaTitle,
       description: metaDesc,
-      images: [`${siteConfig.url}/og-default.png`],
+      images: [`${siteConfig.url}/og/${cat.slug}.png`],
     },
   };
 }

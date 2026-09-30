@@ -9,7 +9,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "software-engineer-jobs-india-2026",
     title: "Software Engineer Jobs India 2026 — Salary & Skills",
     excerpt:
-      "Software engineering remains India's largest IT employment category with 5.4 million professionals. Discover 2026 salary bands by experience, must-have skills, and the top companies actively hiring across Bangalore, Hyderabad, Pune, and remote.",
+      "Software engineering is India's largest IT category with 5.4M professionals. 2026 salary bands, must-have skills, and top companies hiring now.",
     category: "Jobs",
     tags: [
       "software engineer jobs India 2026",
@@ -185,7 +185,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "data-scientist-jobs-india-2026",
     title: "Data Scientist Jobs India 2026 — Salary & Skills",
     excerpt:
-      "Data science hiring in India surged 28% in 2026. From fintech giants to e-commerce unicorns, every major company is scaling its data team. Discover salary ranges, must-have skills, and a step-by-step guide to getting hired.",
+      "Data science hiring in India surged 28% in 2026. Discover salary ranges, must-have skills, and a step-by-step guide to getting hired this year.",
     category: "Jobs",
     tags: [
       "data scientist jobs India 2026",
@@ -359,7 +359,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "ai-ml-engineer-jobs-india-2026",
     title: "AI ML Engineer Jobs in India 2026 — Most In-Demand Tech Role",
     excerpt:
-      "AI/ML engineering is the fastest-growing tech role in India with 31% YoY job growth. From building LLM-powered products to deploying neural networks at scale, discover salary bands, skills, and companies hiring in 2026.",
+      "AI/ML engineering is India's fastest-growing tech role at 31% YoY growth. Discover 2026 salary bands, must-have skills, and companies hiring now.",
     category: "Jobs",
     tags: [
       "AI ML engineer jobs India 2026",
@@ -534,7 +534,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "full-stack-developer-jobs-india-2026",
     title: "Full Stack Developer Jobs India 2026 — Salary",
     excerpt:
-      "Full stack developers are among the most hired profiles in India's startup and product ecosystem. Discover 2026 salaries for React, Node.js, Java, and Python stacks, top companies, and what it takes to stand out.",
+      "Full stack developers are among India's most-hired profiles. 2026 salaries for React, Node, Java, and Python stacks, top companies, and how to stand out.",
     category: "Jobs",
     tags: [
       "full stack developer jobs India 2026",
@@ -705,7 +705,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "cloud-engineer-jobs-india-2026",
     title: "Cloud Engineer Jobs India 2026 — AWS, Azure, GCP",
     excerpt:
-      "Cloud engineering is one of the highest-paying IT specialisations in India. With enterprises migrating workloads at scale, AWS, Azure, and GCP-certified professionals are in heavy demand. Find 2026 salaries, certifications, and top hiring companies.",
+      "Cloud engineering is a top-paying IT specialisation in India. AWS, Azure, and GCP demand, 2026 salaries, certifications, and top hiring companies.",
     category: "Jobs",
     tags: [
       "cloud engineer jobs India 2026",
@@ -880,7 +880,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "cybersecurity-jobs-india-2026",
     title: "Cybersecurity Jobs in India 2026 — Fastest Growing IT Career",
     excerpt:
-      "India faces a shortage of 800,000 cybersecurity professionals while cyberattacks grow 18% annually. This makes cybersecurity the fastest-growing and most recession-proof IT career. Explore 2026 salary data, certifications, and top employers.",
+      "India faces an 800,000 cybersecurity talent shortage as attacks grow 18% yearly. Explore 2026 salary data, certifications, and top employers.",
     category: "Jobs",
     tags: [
       "cybersecurity jobs India 2026",
@@ -1054,7 +1054,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "devops-engineer-jobs-india-2026",
     title: "DevOps Engineer Jobs India 2026 — Salary, Tools & Companies",
     excerpt:
-      "DevOps engineers are the glue between development and production. India's DevOps market grew 19% in 2026 as organisations accelerate CI/CD pipelines and platform engineering. Get the full salary guide, tool stack, and top employers.",
+      "India's DevOps market grew 19% in 2026 as CI/CD and platform engineering scale. Get the full salary guide, tool stack, and top employers.",
     category: "Jobs",
     tags: [
       "DevOps engineer jobs India 2026",
@@ -1225,7 +1225,7 @@ export const ROLE_POSTS: BlogPost[] = [
     slug: "business-analyst-jobs-india-2026",
     title: "Business Analyst Jobs India 2026 — Roles & Salary",
     excerpt:
-      "Business Analysts bridge the gap between technology and business in India's IT sector. With 16% job growth in 2026, BA roles are abundant across IT services, BFSI, and product companies. Discover salary ranges, key skills, and top employers.",
+      "Business Analysts bridge tech and business in India's IT sector, with 16% job growth in 2026. Discover salary ranges, key skills, and top employers.",
     category: "Jobs",
     tags: [
       "business analyst jobs India 2026",

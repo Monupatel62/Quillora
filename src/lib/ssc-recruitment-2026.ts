@@ -29,8 +29,7 @@ export const SSC_RECRUITMENT_POST: BlogPost = {
   title: "SSC Recruitment 2026: CPO, JE & CHTE Vacancies",
 
   excerpt:
-
-    "SSC has multiple active recruitments in 2026 — CPO, Junior Engineer, and Hindi Translator exams. Here\'s a fact-checked breakdown of what\'s officially confirmed on ssc.gov.in versus what\'s circulating on third-party sites.",
+      "SSC's 2026 recruitments — CPO, Junior Engineer, and Hindi Translator. A fact-checked breakdown of what's officially confirmed on ssc.gov.in.",
 
   category: "Jobs",
 

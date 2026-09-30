@@ -9,7 +9,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-bangalore-2026",
     title: "IT Jobs in Bangalore 2026 — Top Companies, Roles & Salaries",
     excerpt:
-      "Bangalore employs 40% of India's IT workforce and leads the country in tech hiring. Here are the top companies actively hiring, roles in demand, salary ranges, and how to land a job in India's Silicon Valley.",
+      "Bangalore employs 40% of India's IT workforce. Top companies hiring, in-demand roles, salary ranges, and how to land a job in Silicon Valley.",
     category: "Jobs",
     tags: [
       "IT jobs Bangalore 2026",
@@ -277,7 +277,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-hyderabad-2026",
     title: "IT Jobs in Hyderabad 2026 — AI Hiring Hub Guide",
     excerpt:
-      "Hyderabad recorded the highest AI/ML hiring growth in India at 48% YoY in 2026. HITEC City is home to Microsoft, Google, Amazon, and over 1,500 IT companies. Here's the complete jobs guide.",
+      "Hyderabad led India in AI/ML hiring growth at 48% YoY in 2026. HITEC City hosts Microsoft, Google, Amazon — here's the complete jobs guide.",
     category: "Jobs",
     tags: [
       "IT jobs Hyderabad 2026",
@@ -453,7 +453,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-pune-2026",
     title: "IT Jobs in Pune 2026 — Companies & Salaries",
     excerpt:
-      "Pune's IT sector grew 13% YoY in 2026 with 1,000+ tech companies in Hinjewadi, Baner, and Kharadi. Here are the top companies hiring, roles in demand, and how to apply.",
+      "Pune's IT sector grew 13% YoY in 2026 with 1,000+ companies in Hinjewadi, Baner, and Kharadi. Top employers, in-demand roles, and how to apply.",
     category: "Jobs",
     tags: [
       "IT jobs Pune 2026",
@@ -593,7 +593,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-mumbai-2026",
     title: "IT Jobs in Mumbai 2026 — MNC & Fintech Hiring",
     excerpt:
-      "Mumbai's AI/ML hiring grew 36% YoY in 2026 — second only to Hyderabad. India's financial capital is also a major IT hub with BKC, Powai, and Airoli as the top tech zones.",
+      "Mumbai's AI/ML hiring grew 36% YoY in 2026 — second only to Hyderabad. India's financial capital is a top IT hub across BKC, Powai, and Airoli.",
     category: "Jobs",
     tags: [
       "IT jobs Mumbai 2026",
@@ -728,7 +728,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-chennai-2026",
     title: "IT Jobs in Chennai 2026 — Companies & Salaries",
     excerpt:
-      "Chennai is Tamil Nadu's IT hub with 500+ companies along OMR. AI/ML hiring grew 31% YoY in 2026. Here are the top employers, roles, salaries, and how to apply.",
+      "Chennai is Tamil Nadu's IT hub with 500+ companies along OMR and 31% AI/ML hiring growth in 2026. Top employers, roles, salaries, and how to apply.",
     category: "Jobs",
     tags: [
       "IT jobs Chennai 2026",
@@ -845,7 +845,7 @@ export const CITY_POSTS: BlogPost[] = [
     slug: "it-jobs-noida-delhi-ncr-2026",
     title: "IT Jobs in Noida & Delhi NCR 2026 — Full Guide",
     excerpt:
-      "Delhi NCR — Noida, Gurgaon, and Greater Noida — is North India's largest IT hub with 2,500+ tech companies. Here's the complete 2026 hiring guide with top companies, roles, salaries.",
+      "Delhi NCR is North India's largest IT hub with 2,500+ companies. The complete 2026 hiring guide — top companies, roles, salaries, and how to apply.",
     category: "Jobs",
     tags: [
       "IT jobs Noida 2026",

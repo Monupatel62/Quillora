@@ -200,7 +200,7 @@ Cognizant Technology Solutions is one of the world's leading IT professional ser
     slug: "accenture-jobs-freshers-salary-2026",
     title: "Accenture Jobs 2026: ASE Roles & Fresher Package",
     excerpt:
-      "Your full guide to Accenture India hiring 2026 — ASE program details, entry salaries ₹3.5L–₹4.5L, lateral bands up to ₹50L, interview tips, and how to apply.",
+      "Accenture India 2026 hiring guide — ASE program, entry salaries ₹3.5–4.5L, lateral bands up to ₹50L, interview tips, and how to apply.",
     category: "Jobs",
     tags: [
       "Accenture jobs 2026",
@@ -389,7 +389,7 @@ Accenture is a global professional services powerhouse with over <strong>750,000
     slug: "capgemini-jobs-freshers-salary-2026",
     title: "Capgemini Jobs 2026: Fresher Package & GAME Guide",
     excerpt:
-      "Everything about Capgemini India hiring in 2026 — GAME aptitude test, fresher CTC ₹4–5L, lateral packages up to ₹45L, top cities, and step-by-step apply guide.",
+      "Capgemini India 2026 hiring — GAME aptitude test, fresher CTC ₹4–5L, lateral packages up to ₹45L, top cities, and a step-by-step apply guide.",
     category: "Jobs",
     tags: [
       "Capgemini jobs 2026",
@@ -577,7 +577,7 @@ Capgemini is a French multinational IT services and consulting company with over
     slug: "tech-mahindra-jobs-freshers-salary-2026",
     title: "Tech Mahindra Jobs 2026: Fresher Salary & Hiring",
     excerpt:
-      "Full Tech Mahindra hiring guide for 2026 — fresher packages ₹3.25–4L, SmartAcademy program, lateral CTC up to ₹40L, key locations, and direct links to apply now.",
+      "Tech Mahindra 2026 hiring guide — fresher pay ₹3.25–4L, SmartAcademy program, lateral CTC up to ₹40L, key locations, and direct apply links.",
     category: "Jobs",
     tags: [
       "Tech Mahindra jobs 2026",

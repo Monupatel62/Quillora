@@ -27,6 +27,12 @@ export function WebsiteJsonLd() {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo.png`,
+        width: 512,
+        height: 512,
+      },
     },
   };
 
@@ -68,6 +74,12 @@ export function ArticleJsonLd({ post }: { post: BlogPost }) {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo.png`,
+        width: 512,
+        height: 512,
+      },
     },
 
     mainEntityOfPage: {
@@ -133,6 +145,12 @@ export function BlogListJsonLd() {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo.png`,
+        width: 512,
+        height: 512,
+      },
     },
     breadcrumb: {
       "@type": "BreadcrumbList",

@@ -578,7 +578,7 @@ Wipro Limited is one of India's "Big Four" IT companies, employing over <strong>
     slug: "hcltech-jobs-freshers-salary-2026",
     title: "HCLTech Jobs 2026: Fresher Salary & Hiring Guide",
     excerpt:
-      "Detailed HCLTech hiring guide for 2026 — campus programs, fresher CTC ₹3.5–4.5L, lateral salaries up to ₹50L, Indian office locations, and direct apply links.",
+      "HCLTech 2026 hiring guide — campus programs, fresher CTC ₹3.5–4.5L, lateral pay up to ₹50L, India office locations, and direct apply links.",
     category: "Jobs",
     tags: [
       "HCLTech jobs 2026",

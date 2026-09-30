@@ -16,7 +16,7 @@ const RAW_POSTS: BlogPost[] = [
     // LSI: artificial intelligence business transformation, AI future of work
     title: "How AI is Quietly Reshaping Every Industry in 2026",
     excerpt:
-      "Artificial intelligence isn't arriving with fanfare — it's already embedded in the tools, workflows, and decisions defining modern business. Here's what's really happening beneath the surface.",
+      "AI is already embedded in the tools, workflows, and decisions defining modern business. Here's what's really happening beneath the surface.",
     category: "Technology",
     tags: [
       "artificial intelligence",
@@ -67,7 +67,7 @@ const RAW_POSTS: BlogPost[] = [
     // LSI: job search strategies, job vacancies USA, how to get hired fast, best job sites 2026
     title: "How to Find a Job in the USA in 2026: Complete Guide",
     excerpt:
-      "The U.S. job market has 7 million openings but 7.6 million job seekers. Here is the exact strategy — from resume to offer — that gets results in 2026's competitive hiring landscape.",
+      "The U.S. has 7M openings but 7.6M job seekers. Here's the exact resume-to-offer strategy that gets results in 2026's competitive market.",
     category: "Jobs",
     tags: [
       "how to find a job",
