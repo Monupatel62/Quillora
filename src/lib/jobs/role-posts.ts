@@ -1390,7 +1390,7 @@ export const ROLE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Product BA / Product Owner roles at SaaS companies pay 2× IT services and offer a faster path to product management career tracks.</p>
   </div>
 </div>
-\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li></ul>`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/software-engineer-jobs-bangalore-2026">Software Engineer Jobs in Bangalore 2026</a></li><li><a href="/blog/data-scientist-jobs-bangalore-2026">Data Scientist Jobs in Bangalore 2026</a></li><li><a href="/blog/ai-ml-engineer-jobs-hyderabad-2026">AI/ML Engineer Jobs in Hyderabad 2026</a></li><li><a href="/blog/full-stack-developer-jobs-pune-2026">Full-Stack Developer Jobs in Pune 2026</a></li><li><a href="/blog/cybersecurity-jobs-mumbai-2026">Cybersecurity Jobs in Mumbai 2026</a></li><li><a href="/blog/devops-engineer-jobs-chennai-2026">DevOps Engineer Jobs in Chennai 2026</a></li></ul>`,
   },
 
 ];

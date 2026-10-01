@@ -681,7 +681,7 @@ export const EXPERIENCE_POSTS: BlogPost[] = [
     <p style="margin:0;font-size:0.9rem;opacity:0.85;">Verbal offers are not offers. At senior levels, hiring timelines are 45–90 days. Keep your job security while the process runs, and only resign after you have signed documentation.</p>
   </div>
 </div>
-\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/2-5-years-experience-it-jobs-india-2026">IT Jobs for 2–5 Years Experience India 2026</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li></ul>`,
+\n<h2>Related Reading</h2>\n<ul><li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li><li><a href="/blog/2-5-years-experience-it-jobs-india-2026">IT Jobs for 2–5 Years Experience India 2026</a></li><li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs India 2026 — Salary & Skills</a></li><li><a href="/blog/how-to-find-a-job-usa-2026">How to Find a Job in the USA in 2026</a></li></ul>`,
   },
 
 ];

@@ -58,6 +58,12 @@ const RAW_POSTS: BlogPost[] = [
 <h2>What This Means For Workers</h2>
 <p>The fear of job displacement, while understandable, misses the more nuanced reality. Jobs aren't disappearing — they're transforming. The skills that matter most are shifting from execution to curation, from doing to directing.</p>
 <p>The silent revolution is already here. The only question is whether you're participating in it or watching from the sidelines.</p>
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/openai-dots-always-on-ai-agents-2026">OpenAI Dots: Always-On AI Agents That Never Clock Out</a></li>
+  <li><a href="/blog/openai-devday-2026-everything-announced">OpenAI DevDay 2026 — Everything Announced</a></li>
+  <li><a href="/blog/ai-ml-engineer-jobs-india-2026">AI/ML Engineer Jobs in India 2026 — skills &amp; salaries</a></li>
+</ul>
     `.trim(),
   },
 
@@ -286,6 +292,12 @@ const RAW_POSTS: BlogPost[] = [
 </ul>
 
 <p>The 2026 job market rewards preparation and precision. Apply less. Prepare more. Network consistently. The offer comes to the candidate who treats the search like a professional project — because that is exactly what it is.</p>
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs in India 2026 — complete guide</a></li>
+  <li><a href="/blog/software-engineer-jobs-india-2026">Software Engineer Jobs in India 2026</a></li>
+  <li><a href="/blog/full-stack-developer-jobs-india-2026">Full-Stack Developer Jobs in India 2026</a></li>
+</ul>
     `.trim(),
   },
 
