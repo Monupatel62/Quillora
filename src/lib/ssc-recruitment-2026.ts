@@ -583,7 +583,14 @@ export const SSC_RECRUITMENT_POST: BlogPost = {
 
 <p><em>Last updated: 13 September 2026. We will update this post as new official notifications are published.</em></p>
 
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/fresher-it-jobs-india-2026">Fresher IT Jobs India 2026 — NQT, InfyTQ, NLTH</a></li>
+  <li><a href="/blog/2-5-years-experience-it-jobs-india-2026">IT Jobs for 2–5 Years Experience in India 2026</a></li>
+  <li><a href="/blog/category/jobs">Browse all Jobs articles on Quillora</a></li>
+</ul>
+
   `.trim(),
 
 };
-
