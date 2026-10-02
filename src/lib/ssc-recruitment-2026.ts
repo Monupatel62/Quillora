@@ -578,6 +578,7 @@ export const SSC_RECRUITMENT_POST: BlogPost = {
 
 
 <p>The CHTE-2026 with 303 translator vacancies is officially confirmed. The JE exam cycle is actively in progress. The CPO 2026 notification is still awaited. Don't let third-party noise rush you into decisions — check the source, verify the facts, and apply through official channels only.</p>
+<p>Weighing government roles against the private sector? If you're a recent graduate, our guide to <a href="/blog/fresher-it-jobs-india-2026">fresher IT jobs in India 2026</a> covers campus drives like TCS NQT and InfyTQ, while experienced candidates can compare openings in <a href="/blog/2-5-years-experience-it-jobs-india-2026">IT jobs for 2–5 years experience</a>.</p>
 
 
 
